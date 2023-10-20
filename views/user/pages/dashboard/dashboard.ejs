@@ -1,0 +1,390 @@
+<%-include("../../partials/header")%>
+
+  <div class="cent" >
+    <div class="card" style="margin-top: 95px;">
+
+<div class="swiper1">
+  <div class="swiper-wrapper" style="height: 24.50vh;">
+    <div class="swiper-slide" style="padding-left: 10px;">
+      <div class="affiliate-card">
+        <div class="top-bar">
+          <span>Direct Ref: $150,000 </span>
+          <span>Indirect Ref: $150,000 </span>
+        </div>
+        <div class="divide"></div>
+        <div class="bar-bb">
+          <h3>Total Balance</h3>
+          <span>$300,000</span>
+        </div>
+      </div>
+  </div>
+    <div class="swiper-slide"  style="padding-left: 10px;">
+      <div class="affiliate-card">
+        <div class="top-bar">
+          <span>Direct Ref: $150,000 </span>
+          <span>Indirect Ref: $150,000 </span>
+        </div>
+        <div class="divide"></div>
+        <div class="bar-bb">
+          <h3>Total Balance</h3>
+          <span>$300,000</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide"  style="padding-left: 10px; ">
+      <div class="affiliate-card">
+        <div class="top-bar">
+          <span>Direct Ref: $150,000 </span>
+          <span>Indirect Ref: $150,000 </span>
+        </div>
+        <div class="divide"></div>
+        <div class="bar-bb">
+          <h3>Total Balance</h3>
+          <span>$300,000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper('.swiper1', {
+      loop: true,
+      effect: 'cards',
+      centerdSlide: true,
+      perSlideRotate: 4,
+      slidesPerView: 'auto',
+      perSlideOffset: 8,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      touch: {
+        enabled: true,
+      },
+      on: {
+        slideChange: function () {
+          const activeSlide = this.slides[this.activeIndex];
+          activeSlide.style.width = ''; 
+        },
+      },
+    });
+  });
+</script>
+
+
+
+    </div>
+  </div>
+  
+ 
+  
+</div>
+
+  <div class="cent">
+    <section class="QuickAction">
+      <div class="title-qa">Quick Action</div>
+      <div class="Quicklist">
+        <div class="taskt">
+          <div class="Task">
+            <a href="/user/task">
+              <div class="Group12563">
+                <div class="Ellipse645">
+                  <img class="Bookmark" src="/image/Bookmark.svg" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="DailyTask">Daily Task</div>
+        </div>
+
+        <div class="taskt">
+          <div class="Task">
+            <a href="/user/vtu">
+              <div class="Group12563">
+                <div class="Ellipse645">
+                  <img class="Bookmark" src="/image/Calling.svg" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="DailyTask">VTU</div>
+        </div>
+
+        <div class="taskt">
+          <div class="Task">
+            <a href="/user/Upgrade">
+              <div class="Group12563">
+                <div class="Ellipse645">
+                  <img class="Bookmark" src="/image/upgrase.svg" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="DailyTask">Upgrade</div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <div class="cent1">
+    <section class="Referralbar1" style="margin-top: 5px;">
+    <div class="ReferralBar">
+      <div class="ReferralLink">
+        <h4>Referral Link:</h4>
+      </div>
+
+      <form>
+        <div class="LinkBar">
+            <input type="text" class="link form-control" id="copyInput" placeholder="https://127.0.192.0:3000=!?297675" value="https://127.0.192.0:3000=!?297675" readonly disabled>
+        </div>
+        <button type="button" class="copybtn" id="copyButton"><ion-icon name="copy-outline"></ion-icon></button>
+    </form>
+
+   
+    </div>
+  </section>
+  </div>
+
+
+<div class="swiper" >
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="AdvertBanner">
+        <img src="/image/Ads banner2.png" alt="">
+      </div>
+    </div>
+       <div class="swiper-slide">
+        <div class="AdvertBanner">
+          <img src="/image/Ads banner2.png" alt="">
+        </div>
+    </div>
+       <div class="swiper-slide">
+        <div class="AdvertBanner">
+        <img src="/image/Ads banner2.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      slidesPerView: 'auto', 
+      spaceBetween: 10, 
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      touch: {
+        enabled: true,
+      },
+      on: {
+        slideChange: function () {
+          const activeSlide = this.slides[this.activeIndex];
+          
+          activeSlide.style.width = '94%'; 
+        },
+      },
+    });
+  });
+</script>
+
+  
+
+
+<!-- 
+
+  <section class="ads">
+    <div class="AdsCards">
+      <div class="AdvertBanner" style="width: 100%; border-radius: 10px;">
+        <img src="/image/Ads banner2.png" alt="">
+      </div>
+
+      <div class="AdvertBanner" style="width: 100%; border-radius: 10px;">
+        <img src="/image/Ads banner2.png" alt="">
+      </div>
+
+      <div class="AdvertBanner" style="width: 100%; border-radius: 10px;">
+        <img src="/image/Ads banner2.png" alt="">
+      </div>
+    </div>
+  </section> -->
+
+  <div class="cent">
+    <section class="RecentActivities">
+      <div class="Viewmore">
+        <div class="RecentActivities1">Recent Activities</div>
+        <div class="RecentActivities1"><a href="#viewmore" style="text-decoration: none;">View More</a></div>
+      </div>
+      <div class="ListFrame1">
+        
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Welcome Bonus </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+
+        <div class="Listly">
+          <div class="icon-list" >
+          <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684"  style="align-items: flex-start;" >
+            <div class="WelcomeBonus1">Transfer to bank</div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+          </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500; ">
+              Successful</div>
+          </div>
+
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Direct Referral </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Indirect Referral</div> 
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Sponsord Post </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+            <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Data Purchase</div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+            <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Airtime Purchase </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+            <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">P2P </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">20,000</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Welcome Bonus </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Welcome Bonus </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <%-include("../../partials/sidebar")%>
+  <%-include("../../partials/footer")%>
