@@ -1565,6 +1565,7 @@ button.pro-form-btn{
     text-align: center;
     transition: 300ms opacity;
     transform: translate3d(0, 0, 0);
+
   }
   
   .swiper-pagination-hidden {
@@ -1582,7 +1583,7 @@ button.pro-form-btn{
     border-radius: 100%;
     background: #350D73;
     opacity: 0.2;
-    margin: 0 2px;
+    margin: 0px;
     cursor: pointer;
   }
   

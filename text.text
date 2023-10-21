@@ -1,47 +1,86 @@
- //JOB
-  require("./jobs/job");
-  //Routes
+  <div class="vendor-body1">
+            <div class="vendor-head">
+                <span>Sales Transaction List</span>
+                <span>Swipe Left & Right</span>
+            </div>
+            <div class="vendor-body">
+                <div class="table-content body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th class="nameaff" style="text-align: left;">Product &amp; Vendor</th>
+                                <th style="text-align: left;">Customer Info</th>
+                                <th>Price($)</th>
+                                <th>Amt/Earn($)</th>
+                                <th>Product Type</th>
+                                <th>Transaction</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
 
-  //AUTH ROUTE
-  app.use("/", authRoute);
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>itodogabriel40@gmail.com</h4>
+                                    <span>Alphatech Multimedia Technology</span>
+                                    <span>+2349129079450</span>
+                                </td>
+                                <td><strong>$67</strong></td>
+                                <td><strong>$34.70</strong></td>
+                                <td>Digital</td>
+                                <td>7435097433648</td>
+                                <td> <button class="prombtn prom" onclick=""
+                                        style="background-color: #04fc1869; color: #0c007c;">
+                                        <span>Completed</span>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>itodogabriel40@gmail.com</h4>
+                                    <span>Alphatech Multimedia Technology</span>
+                                    <span>+2349129079450</span>
+                                </td>
+                                <td><strong>$67</strong></td>
+                                <td><strong>$34.70</strong></td>
+                                <td>Digital</td>
+                                <td>7435097433648</td>
+                                <td> <button class="prombtn prom" onclick=""
+                                        style="background-color: #fc040469; color: #0c007c;">
+                                        <span>Pending</span>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>itodogabriel40@gmail.com</h4>
+                                    <span>Alphatech Multimedia Technology</span>
+                                    <span>+2349129079450</span>
+                                </td>
+                                <td><strong>$67</strong></td>
+                                <td><strong>$34.70</strong></td>
+                                <td>Physical</td>
+                                <td>7435097433648</td>
+                                <td> <button class="prombtn prom" onclick=""
+                                        style="background-color: #04fc1869; color: #0c007c;">
+                                        <span>Completed</span>
+                                    </button></td>
+                            </tr>
 
-  //GENERAL ROUTE
-  app.use("/", generalRoute);
 
-  //USER ROUTE
-  app.use("/user", userRoute);
-
-  //ADMIN ROUTE
-  app.use("/admin", adminRoute);
-
-  //NOTFOUND ROUTE
-  app.use("*", notFoundRoute);
-
-  //Error Middleware
-  app.use(errorMiddleWare);
-
-
-const { homePageGet } = require("../../controllers/general/home");
-const { vtuGet } = require("../../controllers/general/vtu");
-const { jobGet } = require("../../controllers/general/job");
-const { marketGet } = require("../../controllers/general/market");
-const { withdrawGet } = require("../../controllers/general/withdraw");
-const generalRoute = require("express").Router();
-
-//HOMEPAGE
-generalRoute.route("/").get( homePageGet)
-
-//VTUPAGE
-generalRoute.route("/vtu").get( vtuGet)
-
-//VTUPAGE
-generalRoute.route("/job").get( jobGet)
-
-//MARKETPAGE
-generalRoute.route("/market").get( marketGet)
-
-//WITHDRWALPAGE
-generalRoute.route("/withdraw").get( withdrawGet)
-
-
-module.exports = generalRoute
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
