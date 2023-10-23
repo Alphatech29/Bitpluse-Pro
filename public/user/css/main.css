@@ -18,7 +18,7 @@
     background-color: #f9f9f9;
     min-width       : 160px;
     height          : auto;
-    box-shadow      : 0px 8px 16px 0px rgba(90, 90, 90, 0.856);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     z-index         : 1;
 
 }
@@ -125,7 +125,7 @@
     30px;
     object-fit: cover;
     height: 30px;
-    box-shadow: 2px 2px 4px 0px rgba(60, 0, 109, 0.568), 3px 3px 4px 0px rgba(42, 0, 109, 0.493) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .Sidebarname {
@@ -254,7 +254,7 @@
     height         : auto;
     border-radius  : 7px;
     background     : #FFF;
-    box-shadow     : 2px 2px 4px 0px rgba(55, 31, 110, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     overflow       : hidden;
 
 }
@@ -365,60 +365,46 @@ tbody tr:nth-child(even) {
 }
 
 .task12 {
-    appearance        : none;
-    -webkit-appearance: none;
-    height            : 80vh;
-    margin-top        : 70px;
-    width             : 100%;
-    height            : 80vh;
-    padding-top       : 10px;
-    background        : white;
-    border-radius     : 10px;
-    overflow          : hidden;
-    flex-direction    : column;
-    align-items       : center;
-    display           : inline-flex;
+    /* appearance        : none;
+    -webkit-appearance: none; */
+    padding: 10px;
+    padding-top: 85px;
+    padding-bottom: 90px;
 }
 
 .adscard {
     padding       : 10px;
-    width         : 90%;
-    max-height    : 90%;
+    padding-top: 0;
+    height: 580px;
     overflow      : hidden;
-    display       : inline-flex;
+    display       : flex;
     align-items   : center;
     flex-direction: column;
     border-radius : 7px;
-    border        : 1px #350D73 solid;
+    background        : white;
+    border-radius     : 10px;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+  
 }
 
-
-.adscard .thumb23 {
-    overflow     : hidden;
+.adscard .thumb23 img.thumb {
+    object-fit: fill;
+    height: 280px;
+    width: 390px;
     border-radius: 7px;
-    width        : 100%;
-    height       : 50%;
-    object-fit   : cover;
-}
-
-.adscard .thumb23 img {
-    width         : 100%;
-    height        : 100%;
-    object-fit: cover;
 }
 
 .adscard .adstitle {
-    text-align    : left;
     padding-top   : 10px;
-    color         : #260458;
+    color         : #3a0091;
     text-align    : left;
-    font-size     : 1.3rem;
+    font-size     : 20px;
     font-weight   : 600;
     text-transform: uppercase;
 }
 
 .adscard .adscontent p {
-    color             : #260458;
+    color             : #34027e;
     font-size         : 17px;
     display           : -webkit-box;
     -webkit-line-clamp: 3;
@@ -427,6 +413,8 @@ tbody tr:nth-child(even) {
     text-overflow     : ellipsis;
     margin            : 1, 0px 0px;
     padding           : 0;
+    font-weight: 500;
+    line-height: 33px;
 }
 
 .adscontent span a {
@@ -444,9 +432,9 @@ tbody tr:nth-child(even) {
 .adscard .adsbutton {
     padding    : 10px;
     margin-top : 20px;
-    width      : 100%;
     display    : flex;
     align-items: flex-start;
+    width: 100%;
     gap        : 10px;
 }
 
@@ -456,25 +444,27 @@ tbody tr:nth-child(even) {
     background-color: #ffffff;
     border-radius   : 8px;
     border-radius   : 7px;
-    box-shadow      : 2px 2px 4px 0px rgba(38, 4, 117, 0.25) inset, 3px 3px 4px 0px rgba(90, 7, 185, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
-.adsbutton button ion-icon {
-    font-size: 20px;
+.adsbutton button i {
+    font-size: 26px;
+    color: var(--tk);
 }
-
+.product-container{
+    padding-top : 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .addproduct {
-    width           : 93%;
     height          : auto;
-    background-color: #f5f5f5;
-    margin-top      : 65px;
-    display         : inline-flex;
+    background-color: #fff;
+    display         : flex;
     align-items     : center;
     flex-direction  : column;
-    flex-wrap       : wrap;
     padding         : 12px;
     border-radius   : 7px;
-    box-shadow      : 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .product-title {
@@ -505,15 +495,14 @@ tbody tr:nth-child(even) {
 }
 
 .product-boady-add {
-    width         : 100%;
-    display       : inline-flex;
+    display       : flex;
     align-items   : center;
     flex-direction: column;
+    width: 100%;
 }
 
 .product-boady-add form {
-    width          : 100%;
-    display        : inline-flex;
+    display        : flex;
     align-items    : center;
     justify-content: space-between;
     gap            : 10px;
@@ -521,7 +510,6 @@ tbody tr:nth-child(even) {
 }
 
 .product-name {
-
     width: 100%;
 }
 
@@ -545,7 +533,7 @@ tbody tr:nth-child(even) {
     padding           : 15px;
     border-radius     : 7px;
     background        : #FFF;
-    box-shadow        : 1px 1px 2px 0px rgba(81, 2, 146, 0.25) inset, 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 
@@ -578,7 +566,7 @@ tbody tr:nth-child(even) {
     padding           : 10px;
     border-radius     : 7px;
     background        : #FFF;
-    box-shadow        : 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .product-name select {
@@ -588,19 +576,27 @@ tbody tr:nth-child(even) {
     width             : 100%;
     height            : 100%;
     outline           : none;
-    box-shadow        : 1px 1px 2px 0px rgba(53, 13, 115, 0.20), 1px 1px 2px 0px rgba(0, 0, 0, 0.20) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     border-radius     : 7px;
     padding           : 15px;
     color             : #350D73;
 }
-
+.product-name select option{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+}
 .product-name select option:hover {
-    background-color: #350D73;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #64008b !important;
     color           : #ffffff;
 }
 
 .product-name select option::backdrop {
-    background-color: #350D73;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #350D73 !important;
     color           : #fff;
 }
 
@@ -623,7 +619,7 @@ tbody tr:nth-child(even) {
     width          : 100%;
     border-radius  : 7px;
     background     : #FFF;
-    box-shadow     : 1px 1px 2px 0px rgba(81, 2, 146, 0.25) inset, 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 input[type="file"] {
@@ -784,7 +780,7 @@ input[type="file"] {
 .vendor-body {
     width           : 100%;
     background-color: #ffffff;
-    box-shadow      : 1px 1px 4px 0px rgba(0, 0, 0, 0.25), 1px 1px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     overflow        : hidden;
 }
 
@@ -796,7 +792,8 @@ input[type="file"] {
     width        : 100%;
     height       : auto;
     overflow     : hidden;
-    margin-top   : 25px;
+    margin-top   : 10px;
+    margin-bottom: 70px;
     border-radius: 10px;
     color        : #350d73;
 }
@@ -864,29 +861,26 @@ input[type="file"] {
 }
 
 .Referralbar1 {
-    width           : 100%;
     display         : flex;
     align-items     : center;
     justify-content : center;
-    background-color: #350D73;
-    border-radius   : 7px;
-    padding-top     : 5px;
-    padding-bottom  : 5px;
 }
 
 .ReferralBar {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    /* width       : 100%; */
-    gap            : 3px;
+    gap            : 5px;
+    background-color: #350D73;
+    border-radius   : 7px;
+    padding: 7px;
 
 }
 
 .ReferralBar form {
     display         : flex;
-    align-items     : center;
-    justify-content : flex-end;
+    align-items     : flex-start;
+    justify-content : flex-start;
     margin-top      : 0;
     margin-block-end: 0;
     gap             : 10px;
@@ -905,6 +899,7 @@ input[type="file"] {
     border : 0;
     color  : #360d73;
     width  : 100%;
+    padding: 5px;
 }
 
 .ReferralLink h4 {
@@ -915,8 +910,8 @@ input[type="file"] {
     margin-inline-end  : 0px;
     font-weight        : 500;
     color              : #fff;
-    margin-right       : 5px;
     font-size          : 14px;
+    text-align: left;
 }
 
 .copybtn {
@@ -930,7 +925,7 @@ input[type="file"] {
 }
 
 .copybtn ion-icon {
-    font-size  : 15px;
+    font-size  : 17px;
     color      : #350D73;
     font-weight: 700;
 }
@@ -941,7 +936,7 @@ input[type="file"] {
     margin-top      : 60px;
     overflow        : hidden;
     padding         : 10px;
-    box-shadow      : 1px 1px 4px 0px rgba(0, 0, 0, 0.25), 1px 1px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     border-radius   : 7px;
     color           : #350d73;
 }
@@ -985,7 +980,7 @@ input[type="file"] {
     width           : 86vw;
     padding         : 10px;
     border-radius   : 8px;
-    box-shadow      : 1px 1px 4px 0px rgba(122, 110, 1, 0.25), 1px 1px 4px 0px rgba(207, 187, 2, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     color           : #f5f5f5;
     gap             : 10px;
 }
@@ -1301,7 +1296,7 @@ input[type="file"] {
     border-radius: 7px;
     width: 83vw;
     padding: 10px;
-    box-shadow: 2px 2px 4px 0px rgba(60, 0, 109, 0.25), 2px 2px 4px 0px rgba(31, 0, 80, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
   
 }
 .seller-img-pro h4{
@@ -1359,7 +1354,7 @@ input[type="file"] {
     width: 60px;
     object-fit: cover;
     height: 60px;
-    box-shadow: 2px 2px 4px 0px rgba(60, 0, 109, 0.25), 2px 2px 4px 0px rgba(31, 0, 80, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .profile-frame{
@@ -1372,7 +1367,7 @@ input[type="file"] {
     background-color: #fff;
     margin-top: 63px;
     border-radius: 7px;
-    box-shadow: 2px 2px 4px 0px rgba(60, 0, 109, 0.25), 2px 2px 4px 0px rgba(31, 0, 80, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     overflow: hidden;
  
 }
@@ -1452,7 +1447,7 @@ button.pro-form-btn{
     width: 80px;
     object-fit: cover;
     height: 80px;
-    box-shadow: 2px 2px 4px 0px rgba(60, 0, 109, 0.568), 3px 3px 4px 0px rgba(42, 0, 109, 0.493) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 .profile-heard span{
     padding-top: 7px;
@@ -1503,7 +1498,7 @@ button.pro-form-btn{
     padding: 15px;
     border-radius: 7px;
     background: #FFF;
-    box-shadow: 1px 1px 2px 0px rgba(81, 2, 146, 0.25) inset, 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 .pro-pass label input::placeholder{
     color: #360d736c;

@@ -153,19 +153,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-    //This code is for display countries list from api
-    const countrySelect = document.getElementById("countrySelect");
+    
+  
 
-    fetch("http://restcountries.com/v3.1/all")  // Using non-secure HTTP
-      .then(response => response.json())
-      .then(countries => {
-        countries.forEach(country => {
-          const option = document.createElement("option");
-          option.value = country.name.common;
-          option.textContent = country.name.common;
-          countrySelect.appendChild(option);
-        });
-      })
-      .catch(error => console.error("Error fetching countries:", error));
-
-   

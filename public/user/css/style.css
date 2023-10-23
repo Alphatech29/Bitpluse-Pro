@@ -211,110 +211,7 @@ hr {
 
 }
 
-.QuickAction {
-    margin-top     : 17px;
-    display        : flex;
-    width          : 90%;
-    padding        : 3px 10px;
-    flex-direction : column;
-    justify-content: center;
-    gap            : 4px;
-    border-radius  : 10px;
-    background     : #f3f3f3;
-    box-shadow     : 2px 2px 4px 0px rgba(0, 0, 0, 0.25), 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
-}
 
-.QuickAction .title-qa {
-    width      : 88px;
-    height     : 18px;
-    color      : #350D73;
-    font-size  : 13px;
-    font-weight: 700;
-    padding-top: 10px;
-
-
-}
-
-.Quicklist {
-    display        : inline-flex;
-    margin-top     : 17px;
-    padding-bottom : 20px;
-    justify-content: center;
-    align-items    : center;
-    gap            : 50px;
-
-}
-
-.Task {
-    flex           : 1 1 0;
-    height         : 74px;
-    padding-left   : 3px;
-    flex-direction : column;
-    justify-content: center;
-    align-items    : center;
-    display        : inline-flex;
-}
-
-.Group12563 {
-    width : 45px;
-    height: 45px;
-}
-
-.Ellipse645 {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    width          : 45px;
-    height         : 45px;
-    left           : 0px;
-    top            : 0px;
-    background     : white;
-    box-shadow     : 2px 2px 2px #350D73;
-    border-radius  : 9999px;
-}
-
-.Bookmark {
-    width     : 22.50px;
-    height    : 22.50px;
-    background: rgba(0, 0, 0, 0);
-}
-
-/* .Vector-99 {
-    width     : 15px;
-    height    : 18.75px;
-    left      : 3.75px;
-    top       : 1.87px;
-    
-    background: #350D73;
-} */
-
-.DailyTask {
-    margin-top : 5px;
-    color      : #350D73;
-    font-size  : 14px;
-    font-weight: 700;
-}
-
-.taskt {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    flex-direction : column;
-}
-.Vector23 {
-    width      : 20px;
-    height     : 20px;
-    flex-shrink: 0;
-}
-.SummaryBar {
-    margin-top     : 15px;
-    width          : 100%;
-    height         : auto;
-    justify-content: center;
-    align-items    : center;
-    gap            : 40px;
-    display        : flex;
-}
 .ReferralNumbers {
     width        : 135px;
     height       : 69px;
@@ -377,7 +274,7 @@ hr {
     padding-left   : 10px;
     padding-right  : 10px;
     background     : #f7f6f6;
-    box-shadow     : 2px 2px 4px 0px rgba(0, 0, 0, 0.25), 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     border-radius  : 10px;
     overflow       : hidden;
     flex-direction : column;
@@ -544,7 +441,7 @@ footer {
     border-radius  : 10px;
     overflow       : hidden;
     margin-top     : 75px;
-    box-shadow     : 2px 4px 0px rgba(0, 0, 0, 0.25), 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .VtuTab {
@@ -664,7 +561,7 @@ h4.titp{
     border-radius  : 7px;
     background     : #FFF;
     overflow       : hidden;
-    box-shadow     : 1px 1px 2px 0px rgba(53, 13, 115, 0.20), 1px 1px 2px 0px rgba(0, 0, 0, 0.20) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .inputsub {
@@ -722,7 +619,7 @@ h4.titp{
     margin-top        : 20px;
     width             : 100%;
     height            : 100%;
-    box-shadow        : 1px 1px 2px 0px rgba(53, 13, 115, 0.20), 1px 1px 2px 0px rgba(0, 0, 0, 0.20) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     border-radius     : 7px;
     padding           : 12px;
     color             : #350D73;
@@ -929,6 +826,7 @@ h4.titp{
     align-items    : center;
     gap            : 19px;
     display        : inline-flex;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .JobsTab {
@@ -1296,97 +1194,95 @@ h4.titp{
     color          : #31007D;
     font-size      : 10px;
 }
-
-.Atmcard {
-    margin-top   : 88px;
-    width        : 386px;
-    height       : 223px;
-    position     : relative;
-    background   : linear-gradient(249deg, #360772 26%, #5b00a5 50%, #3B068D 63%);
-    border-radius: 9px;
-    overflow     : hidden;
-    border       : 0.50px #350D73 solid;
+.atm-card{
+    padding: 10px;
+    padding-top: 90px;
 }
-
-
-.BankOfNigeria {
-    color        : white;
-    font-size    : 16px;
-    text-align: end;
-}
-
-.info {
-    display       : flex;
+.atm-card .atm-card-container{
+    background: linear-gradient(102deg, #390085 11.05%, rgb(70, 1, 116) 33.7%, rgba(150, 0, 188, 0.99) 57%, rgba(92, 0, 167, 0.99) 80.92%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    padding: 10px;
+    color: #fff;
     flex-direction: column;
-    padding       : 10px;
+    height: 163px;
 }
-
-.groupchip {
-    margin-top: 13px;
-    display        : flex;
-    align-items    : center;
-    justify-content: space-between;
-}
-
-.cardnumb {
-    color      : #FFF;
-    font-size  : 20px;
-    font-style : normal;
-    font-weight: 500;
-}
-
-.cardnumbersub {
-    color      : #FFF;
-    font-size  : 10px;
-    font-style : normal;
-    font-weight: 500;
-    margin-top: -15px;
-}
-.name_logo{
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-.cardname {
-    color      : #FFF;
-    font-size  : 13px;
-    font-style : normal;
-    font-weight: 500;
-   
-}
- .logo{
+.atm-card .atm-card-container .card-title{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 20px;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+    font-size: 17px;
+    font-weight: 600;
 }
-.name_logo .logoname {
-    color      : #FFF;
-    font-size  : 13px;
-    font-style : normal;
-    font-weight: 400;
+.atm-card .atm-card-container .atm-contactless{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.atm-card .atm-card-container .atm-contactless ion-icon{
+    text-align: end;
+    font-size: 27px;
+    transform: rotate(90deg);
+}
+.atm-card .atm-card-container .atm-num{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 12px;
+}
+.atm-card .atm-card-container .atm-num h2{
+    font-size: 18px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    cursor: none;
+    letter-spacing: 3px;
+}
+.at-num{
+    text-decoration: none !important;
+}
+.atm-card .atm-card-container .atm-num span{
+    font-size: 12px;
+    font-weight: 500;
+}
+.atm-card .atm-card-container .atm-bal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.atm-card .atm-card-container .atm-bal svg{
+    padding-top: 17px;
+}
+.atm-card .atm-card-container .atm-bal h2.atm-cb{
+    font-size: 17px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-top: 12px;
+}
+::placeholder{
+    color: #350D73;
 }
 .drawalpage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
 }
 .page34 {
-    width         : 386px;
-    height        : 100%;
     border-radius : 8px;
     background    : #FFF;
     overflow      : hidden;
     display       : flex;
     align-items   : center;
+    justify-content: center;
+    padding: 10px;
     flex-direction: column;
     color: #350D73;
-    padding-left  : 10px;
     padding-bottom: 50px;
-    box-shadow    : 1px 1px 4px 0px rgba(0, 0, 0, 0.25), 1px 1px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
 }
 
 .select-field2 {
@@ -1394,7 +1290,7 @@ h4.titp{
     -webkit-appearance: none;
     background        : #ffffff;
     width: 350px;
-    box-shadow        : 1px 1px 2px 0px rgba(53, 13, 115, 0.20), 1px 1px 2px 0px rgba(0, 0, 0, 0.20) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     border-radius     : 7px;
     padding           : 12px;
     color             : #350D73;
@@ -1465,7 +1361,7 @@ h4.titp{
     margin-top: 20px;
     padding: 1px;
     background: #ffffff;
-    box-shadow: 1px 1px 2px 0px rgba(67, 5, 160, 0.2), 1px 1px 2px 0px rgba(38, 1, 99, 0.2) inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     border-radius: 7px;
     color: #350D73;
 }
@@ -1490,10 +1386,10 @@ h4.titp{
 }
 .hist{
     overflow: hidden;
-    width: 386px;
+    width: 383px;
     height: 200px;
     background: white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     border-radius:10px;
     padding: 10px;
 }
