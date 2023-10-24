@@ -109,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
 
 
-
 // This code is for product image upload
     const input = document.getElementById('imageUpload');
     const selectedImagesContainer = document.getElementById('selectedImages');
