@@ -12,6 +12,7 @@ const { userProductVendorGet} = require("../../controllers/user/productVendor");
 const { userSellerGet} = require("../../controllers/user/sellerPortal");
 const { userAdduserGet} = require("../../controllers/user/add-new-user");
 const { userLeaderboardGet} = require("../../controllers/user/leaderBoard");
+const { userReferralGet} = require("../../controllers/user/referral");
 const { userProfileGet, userSecurityGet, userBlockGet} = require("../../controllers/user/settings");
 const userRoute = require("express").Router();
 
@@ -42,6 +43,9 @@ userRoute.route("/upgrade").get(userUpgradeGet);
 
 //TASK DASHBOARD
 userRoute.route("/task").get(userTaskGet);
+
+//REFERRAL DASHBOARD
+userRoute.route("/referral").get(userReferralGet);
 
 
 //MARKET DASHBOARD

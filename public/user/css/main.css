@@ -1553,8 +1553,10 @@ button.pro-form-btn{
   
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 2px;
     border-radius: 10px;
+    background: #350D73;
+    color: #350D73;
 }
   
   ::-webkit-scrollbar-thumb {

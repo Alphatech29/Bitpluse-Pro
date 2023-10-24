@@ -1,3 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("hide");
+  const contentToHide = document.querySelector(".board-bal h2");
+  const originalContent = contentToHide.textContent;
+  let isHidden = false;
+
+  toggleButton.innerHTML = '<span><i class="fa-solid fa-eye"></i></span>';
+
+  toggleButton.addEventListener("click", function () {
+      if (isHidden) {
+          contentToHide.textContent = originalContent;
+          toggleButton.querySelector("span").innerHTML = '<i class="fa-solid fa-eye"></i>';
+      } else {
+          contentToHide.textContent = "$xxxx.xx";
+          toggleButton.querySelector("span").innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+      }
+      isHidden = !isHidden;
+  });
+});
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.VtuTab .buydata');
     const tabContents = document.querySelectorAll('.Field');
@@ -153,5 +178,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     
-  
 
+
+
+    
+    
+    
