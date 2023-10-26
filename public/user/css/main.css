@@ -7,7 +7,7 @@
 .dropdown-content {
     overflow        : hidden;
     left            : 10px;
-    top             : 55px;
+    top             : 40px;
     padding-top     : 4px;
     padding-bottom  : 4px;
     padding-left    : 10px;
@@ -42,10 +42,10 @@
 }
 
 .dropdown-divider {
-    margin-bottom: 15px;
-    margin-top   : 9px;
+    margin-bottom: 8px;
+    margin-top   : 6px;
     overflow     : hidden;
-    border-top   : 1px solid #350D73;
+    border   : 1px dashed #360d736e;
 }
 
 .dropdown-divider2 {
@@ -286,12 +286,6 @@ thead th {
     background-color: #2c0666;
 }
 
-/* .body td {
- width: 200px;
-    text-align: left;
-        border-collapse: collapse;
-        padding: 7px;
-    } */
 tbody tr {
     color    : #2c0666;
     font-size: 15px;
@@ -892,6 +886,72 @@ input[type="file"] {
     color: #350D73;
     font-size: 20px;
 }
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+    padding-bottom: 12px;
+}
+
+.swiper-slide{
+    flex-shrink: 0;
+    width: 100%;
+    padding-right: 30px;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+
+.swiper .swiper-wrapper{
+    padding: 10px;
+    
+
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+
+  }
+  
+  .swiper-pagination-hidden {
+    opacity: 0;
+  }
+  
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #350D73;
+    opacity: 0.2;
+    margin: 0px;
+    cursor: pointer;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #350D73;
+  }
+
+
+
+
+
+
+
+
 
 
 .leaderBoard {
@@ -1501,56 +1561,7 @@ button.pro-form-btn{
     height: 120px;
     border-radius: 10px;
 }
-.swiper-slide{
-    flex-shrink: 0;
-    width: 95%;
-    padding-right: 30px;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-    display: block;
-}
 
-
-.swiper .swiper-wrapper{
-    height: 16vh;
-    padding: 10px;
-    
-
-}
-
-.swiper-pagination {
-    position: absolute;
-    text-align: center;
-    transition: 300ms opacity;
-    transform: translate3d(0, 0, 0);
-
-  }
-  
-  .swiper-pagination-hidden {
-    opacity: 0;
-  }
-  
-  .swiper-pagination-clickable .swiper-pagination-bullet {
-    cursor: pointer;
-  }
-  
-  .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    display: inline-block;
-    border-radius: 100%;
-    background: #350D73;
-    opacity: 0.2;
-    margin: 0px;
-    cursor: pointer;
-  }
-  
-  .swiper-pagination-bullet-active {
-    opacity: 1;
-    background-color: #350D73;
-  }
-  
 
 ::-webkit-scrollbar {
     width: 2px;

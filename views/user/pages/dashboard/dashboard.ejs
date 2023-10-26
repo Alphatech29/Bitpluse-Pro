@@ -1,82 +1,59 @@
 <%-include("../../partials/header")%>
 
-<div class="dashbord">
-  <div class="board-container">
-    <div class="board-body">
-      <div class="board-content">
-        <h4>Overview Balance</h4>
-        <span id="hide"></span>
-      </div>
-      <div class="board-bal">
-        <h2>$20,000,000.00</h2>
-        <span>Updated few mins ago</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-  <!-- <div class="cent" >
-    <div class="card" style="margin-top: 95px;">
-
 <div class="swiper1">
   <div class="swiper-wrapper" >
-    <div class="swiper-slide" style="padding-left: 10px;">
-      <div class="affiliate-card">
-        <div class="top-bar">
-          <span>Direct Ref: $150,000 </span>
-          <span>Indirect Ref: $150,000 </span>
-        </div>
-        <div class="divide"></div>
-        <div class="bar-bb">
-          <h3>Total Balance</h3>
-          <span>$300,000</span>
+    <div class="swiper-slide">
+      <div class="dashbord">
+        <div class="board-container">
+          <div class="board-body">
+            <div class="board-content">
+              <h4>Overview Balance</h4>
+              <span id="hide"></span>
+            </div>
+            <div class="board-bal">
+              <h2>$20,000,000.00</h2>
+              <span>Updated few mins ago</span>
+            </div>
+          </div>
         </div>
       </div>
   </div>
-    <div class="swiper-slide"  style="padding-left: 10px;">
-      <div class="affiliate-card">
-        <div class="top-bar">
-          <span>Direct Ref: $150,000 </span>
-          <span>Indirect Ref: $150,000 </span>
+    <div class="swiper-slide" >
+      <div class="referral">
+        <div class="ref-container">
+            <div class="ref-mat"></div>
+            <div class="ref-body">
+                <div class="ref-content">
+                    <h4>Affiliate Balance</h4>
+                    <h2>$600,000.00</h2>
+                    <span>Updated few mins ago</span>
+                </div>
+            </div>
         </div>
-        <div class="divide"></div>
-        <div class="bar-bb">
-          <h3>Total Balance</h3>
-          <span>$300,000</span>
-        </div>
-      </div>
     </div>
-    <div class="swiper-slide"  style="padding-left: 10px; ">
-      <div class="affiliate-card">
-        <div class="top-bar">
-          <span>Direct Ref: $150,000 </span>
-          <span>Indirect Ref: $150,000 </span>
+    </div>
+    <div class="swiper-slide">
+      <div class="dash-act">
+        <div class="dash-act-container">
+            <div class="dash-act-body">
+                <div class="dash-act-content">
+                    <h4>Activitise Balance</h4>
+                    <h2>20,000.00PT</h2>
+                    <span>Updated few mins ago</span>
+                </div>
+            </div>
         </div>
-        <div class="divide"></div>
-        <div class="bar-bb">
-          <h3>Total Balance</h3>
-          <span>$300,000</span>
-        </div>
-      </div>
+    </div>
     </div>
   </div>
 
   <div class="swiper-pagination"></div>
-</div> -->
+</div> 
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper('.swiper1', {
       loop: true,
-      effect: 'cards',
       centerdSlide: true,
       perSlideRotate: 4,
       slidesPerView: 'auto',
@@ -128,37 +105,69 @@
   </div>
 </div>
 
-
-
-
-<div class="swiper" >
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="AdvertBanner">
-        <img src="/image/Ads banner2.png" alt="">
-      </div>
-    </div>
-       <div class="swiper-slide">
-        <div class="AdvertBanner">
-          <img src="/image/Ads banner2.png" alt="">
+<div class="dash-py">
+  <div class="dash-py-container">
+    <div class="dash-py-body">
+      <div class="dash-py-content" style="--py:#00c28113;">
+        <div class="dash-py-icon" style="--p-y:#00c2812d;"><i class="fa-solid fa-sack-dollar"></i></div>
+        <div class="dash-py-name">
+          <h2>$300,000</h2>
+          <span>Overall Payout</span>
         </div>
-    </div>
-       <div class="swiper-slide">
-        <div class="AdvertBanner">
-        <img src="/image/Ads banner2.png" alt="">
+      </div>
+      <div class="dash-py-content" style="--py:#006bc217;">
+        <div class="dash-py-icon"  style="--p-y:#006bc225;"><i class="fa-solid fa-money-bill-1-wave"></i></div>
+        <div class="dash-py-name">
+          <h2>$300,000</h2>
+          <span>Total Payout</span>
+        </div>
       </div>
     </div>
   </div>
-  <div class="swiper-pagination"></div>
 </div>
 
+<div class="swiper1 ads">
+  <div class="swiper-wrapper" >
+    <div class="swiper-slide">
+      <div class="dash-ads">
+        <div class="dash-ads-container">
+          <div class="dash-ads-body">
+            <img class="ads-img" src="/image/Ads banner2.png" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+    <div class="swiper-slide" >
+      <div class="dash-ads">
+        <div class="dash-ads-container">
+          <div class="dash-ads-body">
+            <img class="ads-img" src="/image/Ads banner2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="dash-ads">
+        <div class="dash-ads-container">
+          <div class="dash-ads-body">
+            <img class="ads-img" src="/image/Ads banner2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination" style="bottom: 16px;"></div>
+</div> 
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.ads', {
       loop: true,
-      slidesPerView: 'auto', 
-      spaceBetween: 10, 
+      centerdSlide: true,
+      perSlideRotate: 4,
+      slidesPerView: 'auto',
+      perSlideOffset: 8,
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -173,13 +182,14 @@
       on: {
         slideChange: function () {
           const activeSlide = this.slides[this.activeIndex];
-          
-          activeSlide.style.width = '94%'; 
+          activeSlide.style.width = ''; 
         },
       },
     });
   });
 </script>
+
+
 
   
 <div class="dash-hist">
@@ -298,8 +308,6 @@
     </div>
   </div>
 </div>
-
-
 
   </div>
 

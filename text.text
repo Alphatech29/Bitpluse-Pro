@@ -3,8 +3,11 @@
 
    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
   
-
-
+  
+  autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
 
   
   <div class="cent">

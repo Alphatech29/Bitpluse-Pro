@@ -1,60 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-.dashbord{
-    padding: 10px;
+.dashbord {
+    padding   : 10px;
     margin-top: 68px;
 }
-.dashbord .board-container{
+
+.dashbord .board-container {
     background-color: #350D73;
     border-radius   : 7px;
-    padding: 7px;
+    padding         : 7px;
 }
-.dashbord .board-container .board-body{
-   display: flex;
-   align-items: flex-start;
-   justify-content: flex-start;
-   flex-direction: column;
-   padding-left: 15px;
-   gap: 2px;
-   padding-bottom: 7px;
+
+.dashbord .board-container .board-body {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: flex-start;
+    flex-direction : column;
+    padding-left   : 15px;
+    gap            : 2px;
+    padding-bottom : 7px;
 }
-.dashbord .board-container .board-body .board-content{
-    display: flex;
+
+.dashbord .board-container .board-body .board-content {
+    display    : flex;
     align-items: center;
- }
- .dashbord .board-container .board-body .board-content h4{
-    font-size: 13px;
-    color: #ffffffdc;
-    text-align: left;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+}
+
+.dashbord .board-container .board-body .board-content h4 {
+    font-size          : 13px;
+    color              : #ffffffdc;
+    text-align         : left;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: 500;
-    padding-top:9px ;
- }
- .dashbord .board-container .board-body .board-content span{
-    font-size: 12px;
-    color: #ffffffea;
+    margin-inline-end  : 0px;
+    font-weight        : 500;
+    padding-top        : 9px;
+}
+
+.dashbord .board-container .board-body .board-content span {
+    font-size   : 12px;
+    color       : #ffffffea;
     padding-left: 3px;
-    padding-top: 9.67px;
-    cursor: pointer;
- }
- .dashbord .board-container .board-body .board-bal h2{
-    font-size: 15px;
-    color: #FFF;
-    text-align: left;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    padding-top : 9.67px;
+    cursor      : pointer;
+}
+
+.dashbord .board-container .board-body .board-bal h2 {
+    font-size          : 15px;
+    color              : #FFF;
+    text-align         : left;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
- }
- .dashbord .board-container .board-body .board-bal span{
-    font-size: 9px;
-    color: #ffffffd0;
+    margin-inline-end  : 0px;
+}
+
+.dashbord .board-container .board-body .board-bal span {
+    font-size : 9px;
+    color     : #ffffffd0;
     text-align: left;
- }
+}
 
 
 .swiper1 {
@@ -74,68 +81,34 @@
     perspective: 700px;
 }
 
-.stakeholders {
-    margin-top      : 14px;
-    width           : 94.5%;
-    background-color: #FFF;
-    padding         : 10px;
-    border-radius   : 7px;
-    box-shadow      : 2px 2px 4px 0px rgba(72, 48, 129, 0.25) inset, 2px 2px 4px 0px rgba(71, 71, 71, 0.25);
-}
-
-.stakeholders .stake-wrapper {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    flex-direction : column;
-    width          : 100%;
-    color          : #350D73;
-}
-
-.stakeholders .stake-wrapper p {
-    display            : block;
-    text-align         : center;
-    font-size          : 13px;
-    margin-block-start : 0em;
-    margin-block-end   : 1.70em;
-    margin-inline-start: 0px;
-    margin-inline-end  : 0px;
-}
-
-.stakeholders .stake-wrapper h3 {
-    font-size: 20px;
-}
-
-.stakeholders .stake-wrapper button.stake-btn {
-    padding         : 10px 45px 10px 45px;
-    border-radius   : 7px;
-    background-color: #350D73;
-    font-size       : 18px;
-    color           : #FFF;
-}
-
 .holder-card {
+    padding   : 10px;
+    margin-top: 68px;
+}
+
+.holder-card .holder-card-container {
     background   : radial-gradient(circle, rgb(106, 3, 161) 20%, rgba(56, 1, 111, 1) 100%);
-    width        : 100%;
-    height       : 110px;
     border-radius: 7px;
     box-shadow   : 2px 2px 4px 0px rgba(31, 64, 155, 0.25) inset, 2px 2px 4px 0px rgba(38, 163, 221, 0.25);
-    overflow     : hidden;
+    padding      : 7px;
+    padding-left : 15px;
 }
 
-.holder-card .holder-body {
-    position: relative;
-    padding : 10px 15px 10px 15px;
+.holder-card .holder-card-container .holder-body {
+    padding        : 15px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : flex-start;
+    color          : #FFF;
 }
 
-.holder-card .holder-body .holder-bal {
-    color      : #FFF;
-    padding-top: 23px;
+.holder-card .holder-card-container .holder-body .holder-bal {
+    color: #FFF;
 }
 
-.holder-card .holder-body .holder-bal h3 {
-    font-size          : 14px;
-    font-weight        : 600;
+.holder-card .holder-card-container .holder-body .holder-bal h3 {
+    font-size          : 13px;
+    font-weight        : 500;
     color              : #ffffffec;
     margin-block-start : 0em;
     margin-block-end   : 0em;
@@ -143,79 +116,94 @@
     margin-inline-end  : 0px;
 }
 
-.holder-card .holder-body .holder-bal span {
-    font-size  : 17px;
+.holder-card .holder-card-container .holder-body .holder-bal span {
+    font-size  : 16px;
     font-weight: 600;
 }
 
-.holder-card .holder-body .holder-btn button {
+.holder-card .holder-card-container .holder-body .holder-btn {
+    padding-top: 10px;
+}
+
+.holder-card .holder-card-container .holder-body .holder-btn button {
     font-size       : 15px;
-    position        : absolute;
-    right           : 12;
-    top             : 45;
     border-radius   : 7px;
     color           : #FFF;
     background-color: #0babb1;
     border          : none;
-    padding         : 7px 20px 7px 20px;
-
+    padding         : 7px;
 }
 
 .sub-holder {
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
-    flex-direction  : column;
-    overflow        : hidden;
+    padding: 10px;
+}
+
+.sub-holder .sub-holder-container {
     background-color: #FFF;
-    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
-    border-radius   : 7px;
-    margin-top      : 15px;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    padding-top     : 5px;
+    padding-bottom  : 5px;
+    overflow        : hidden;
+    height          : auto;
 }
 
-.sub-holder .sub-card-holder {
+.sub-holder .sub-holder-container .sub-card-holder {
+    padding        : 7px;
     display        : flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items    : center;
-    gap            : 40px;
-    padding        : 10px 15px 10px 15px;
+    flex-wrap      : wrap;
+    gap            : 15px;
 }
 
-.sub-holder .sub-card-holder .sub-card-name {
-    padding         : 10px;
-    width           : 150px;
-    border-radius   : 7px;
-    background-color: var(--sub-card);
+.sub-holder .sub-holder-container .sub-card-holder .sub-card-name {
     display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
-    color           : #350D73;
-    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    align-items     : flex-start;
+    justify-content : flex-start;
+    width           : 45%;
+    background-color: var(--sub-card);
+    box-shadow      : 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
+    border-radius   : 7px;
+    padding         : 7px;
+    padding-right   : 0;
+    color           : #340978;
 
 }
 
-.sub-holder .sub-card-holder .sub-card-name h4 {
-    font-size          : 14px;
-    font-weight        : 600;
-    color              : #350D73;
+.sub-holder .sub-holder-container .sub-card-holder .sub-card-name .sub-icon {
+    font-size       : 17px;
+    margin-right    : 10px;
+    padding         : 7px;
+    background-color: var(--icon);
+    border-radius   : 7px;
+}
+
+.sub-holder .sub-holder-container .sub-card-holder .sub-card-name .sub-name {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.sub-holder .sub-holder-container .sub-card-holder .sub-card-name .sub-name h4 {
     margin-block-start : 0em;
     margin-block-end   : 0em;
     margin-inline-start: 0px;
     margin-inline-end  : 0px;
-    text-align         : center;
-
-}
-
-.sub-holder .sub-card-holder .sub-card-name span {
     font-size          : 13px;
-    font-weight        : 700;
-    color              : #350D73;
+    text-align         : center;
+    padding-top        : 4px;
+
+}
+
+.sub-holder .sub-holder-container .sub-card-holder .sub-card-name .sub-name span {
     margin-block-start : 0em;
     margin-block-end   : 0em;
     margin-inline-start: 0px;
     margin-inline-end  : 0px;
-    text-align         : center;
+    font-size          : 11px;
+    font-weight        : 500;
 
 }
 
@@ -351,11 +339,8 @@
 }
 
 .seller {
-    margin-top    : 50px;
-    padding       : 20px;
-    padding-left  : 3px;
-    padding-right : 3px;
-    padding-bottom: 10px;
+    margin-top: 68px;
+    padding   : 10px;
 }
 
 .seller .seller-container {
@@ -406,58 +391,79 @@
 }
 
 .seller-qk {
-    padding: 10px 3px 10px 3px;
-
+    padding: 10px;
 }
 
 .seller-qk .seller-qk-container {
     background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
     padding-top     : 5px;
     padding-bottom  : 5px;
-    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    overflow        : hidden;
     height          : auto;
-    border-radius   : 7px;
 
 }
 
 .seller-qk .seller-qk-container .qk-body {
+    padding        : 7px;
     display        : flex;
     justify-content: center;
     align-items    : center;
     flex-wrap      : wrap;
-    padding        : 7px;
-    gap            : 10px;
+    gap            : 15px;
 }
 
 .seller-qk .seller-qk-container .qk-body .qk-content {
-    width           : 44%;
-    justify-content : center;
-    align-items     : center;
     display         : flex;
-    flex-direction  : column;
+    align-items     : flex-start;
+    justify-content : flex-start;
+    width           : 45%;
     background-color: var(--qk);
     box-shadow      : 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
     border-radius   : 7px;
     padding         : 7px;
+    padding-right   : 0px;
     color           : #340978;
 }
 
-.seller-qk .seller-qk-container .qk-body .qk-content h2 {
-    font-size  : 14px;
-    line-height: 8px;
-    font-weight: 500;
+.seller-qk .seller-qk-container .qk-body .qk-content .qk-icon {
+    font-size       : 17px;
+    margin-right    : 10px;
+    padding         : 7px;
+    border-radius   : 7px;
+    background-color: var(--q-k);
 }
 
-.seller-qk .seller-qk-container .qk-body .qk-content span {
-    font-size  : 15px;
-    font-weight: 600;
-    line-height: 17spx;
+.seller-qk .seller-qk-container .qk-body .qk-content .qk-name {
+    justify-content: center;
+    align-items    : center;
+    display        : flex;
+    flex-direction : column;
+}
+
+.seller-qk .seller-qk-container .qk-body .qk-content .qk-name h2 {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 13px;
+    text-align         : center;
+    padding-top        : 4px;
+}
+
+.seller-qk .seller-qk-container .qk-body .qk-content .qk-name span {
+
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 11px;
+    font-weight        : 500;
 }
 
 .seller-transact {
-    padding      : 10px;
-    padding-left : 2px;
-    padding-right: 2px;
+    padding: 10px;
 }
 
 .seller-transact .transact-head {
@@ -573,8 +579,6 @@
 
 .top-selling {
     padding      : 10px;
-    padding-left : 2px;
-    padding-right: 2px;
     margin-bottom: 70px;
 }
 
@@ -704,6 +708,7 @@
 .dash-hist {
     padding      : 10px;
     margin-bottom: 90px;
+    padding-top  : 0px;
 }
 
 .dash-hist .dash-container {
@@ -862,7 +867,7 @@
 }
 
 .dash-action .action-container .action-body {
-    padding-bottom        : 7px;
+    padding-bottom : 7px;
     display        : flex;
     justify-content: center;
     align-items    : center;
@@ -926,8 +931,8 @@
 }
 
 .vendor-card .vendor-container .vendor-body h2 {
-    font-size: 16.45px;
-    line-height: 20px;
+    font-size          : 16.45px;
+    line-height        : 20px;
     margin-block-start : 0em;
     margin-block-end   : 0em;
     margin-inline-start: 0px;
@@ -948,53 +953,75 @@
     background-color: #FFF;
     border-radius   : 5px;
     box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top     : 5px;
+    padding-bottom  : 5px;
     overflow        : hidden;
-    height: auto;
+    height          : auto;
 }
 
 .card-pay .card-pay-container .card-pay-body {
-    display        : flex;
-    justify-content:center;
-    align-items    : center;
-   flex-wrap: wrap;
-    gap            : 10px;
     padding        : 7px;
-   
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-wrap      : wrap;
+    gap            : 15px;
+
 }
 
 .card-pay .card-pay-container .card-pay-body .card-pay-content {
-    width: 44%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    display         : flex;
+    align-items     : flex-start;
+    justify-content : flex-start;
+    width           : 45%;
     background-color: var(--c-p);
-    box-shadow: 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
-    border-radius: 7px;
-    padding: 7px;
-    color: #340978;
+    box-shadow      : 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
+    border-radius   : 7px;
+    padding         : 7px;
+    padding-right   : 0px;
+    padding-right   : 0;
+    color           : #340978;
 }
-.card-pay .card-pay-container .card-pay-body .card-pay-content h4{
-    font-size: 14px;
-    padding-top: 5px;
-    font-weight: 500;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+
+.card-pay .card-pay-container .card-pay-body .card-pay-content .card-pay-icon {
+    font-size       : 17px;
+    margin-right    : 10px;
+    padding         : 7px;
+    border-radius   : 7px;
+    background-color: var(--p-i);
+}
+
+.card-pay .card-pay-container .card-pay-body .card-pay-content .card-pay-name {
+    justify-content: center;
+    align-items    : center;
+    display        : flex;
+    flex-direction : column;
+}
+
+.card-pay .card-pay-container .card-pay-body .card-pay-content .card-pay-name h4 {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 13px;
+    text-align         : center;
+    padding-top        : 4px;
 }
-.card-pay .card-pay-container .card-pay-body .card-pay-content span{
-    font-size: 15px;
-    font-weight: 600;
-    padding-bottom: 2px;
-    padding-top: 2px;
+
+.card-pay .card-pay-container .card-pay-body .card-pay-content .card-pay-name span {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 11px;
+    font-weight        : 500;
 }
-.chart{
+
+.chart {
     padding: 10px;
 }
-.chart .chart-container{
+
+.chart .chart-container {
     background-color: #FFF;
     border-radius   : 5px;
     box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
@@ -1006,85 +1033,491 @@
     flex-direction  : column;
     overflow        : hidden;
 }
-.chart .chart-container .chart-body{
-    padding: 5px;
-    display: flex;
+
+.chart .chart-container .chart-body {
+    padding        : 5px;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
-.referral{
+.dash-ads {
     padding: 10px;
+}
+
+.dash-ads .dash-ads-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding        : 5px;
+}
+
+.dash-ads .dash-ads-container .dash-ads-body {
+    width: 100%;
+}
+
+.dash-ads .dash-ads-container .dash-ads-body img.ads-img {
+    object-fit   : fill;
+    height       : 70px;
+    border-radius: 5px;
+    box-shadow   : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+}
+
+
+
+
+
+.referral {
+    padding   : 10px;
     margin-top: 68px;
 }
-.referral .ref-container{
+
+.referral .ref-container {
     background-color: #350D73;
     border-radius   : 7px;
-    padding: 7px;
-    position: relative;
+    padding         : 7px;
+    position        : relative;
 }
-.referral .ref-container .ref-mat{
-    position: absolute;
-    width: 100px;
-    height: 100px;
+
+.referral .ref-container .ref-mat {
+    position     : absolute;
+    width        : 100px;
+    height       : 100px;
     border-radius: 9999px;
-    border: 10px rgba(255, 255, 255, 0.096) solid;
-    top: 0;
+    border       : 10px rgba(255, 255, 255, 0.096) solid;
+    top          : 0;
 }
-.referral .ref-container .ref-mat::after{
-    content: "";
-  left: 230px;
-  top: 40px;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 9999px;
-  border: 10px rgba(255, 255, 255, 0.096) solid;
+
+.referral .ref-container .ref-mat::after {
+    content      : "";
+    left         : 230px;
+    top          : 40px;
+    position     : absolute;
+    width        : 100px;
+    height       : 100px;
+    border-radius: 9999px;
+    border       : 10px rgba(255, 255, 255, 0.096) solid;
 }
-.referral .ref-container .ref-mat::before{
-    content: "";
-  left: 150px;
-  bottom: 60px;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 9999px;
-  border: 10px rgba(255, 255, 255, 0.096) solid;
+
+.referral .ref-container .ref-mat::before {
+    content      : "";
+    left         : 150px;
+    bottom       : 60px;
+    position     : absolute;
+    width        : 100px;
+    height       : 100px;
+    border-radius: 9999px;
+    border       : 10px rgba(255, 255, 255, 0.096) solid;
 }
-.referral .ref-container .ref-body{
-   width:100%;
-   padding-bottom: 7px;
+
+.referral .ref-container .ref-body {
+    width         : 100%;
+    padding-bottom: 7px;
 }
-.referral .ref-container .ref-body .ref-content{
-    display: flex;
+
+.referral .ref-container .ref-body .ref-content {
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
+    flex-direction : column;
+    color          : #FFF;
+}
+
+.referral .ref-container .ref-body .ref-content h4 {
+    font-size          : 13px;
+    color              : #ffffffdc;
+    text-align         : center;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-weight        : 500;
+    padding-top        : 9px;
+}
+
+.referral .ref-container .ref-body .ref-content h2 {
+    font-size          : 15px;
+    color              : #FFF;
+    text-align         : center;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    padding-top        : 2px;
+}
+
+.referral .ref-container .ref-body .ref-content span {
+    font-size : 9px;
+    color     : #ffffffd0;
+    text-align: center;
+}
+
+.ref-card {
+    padding: 10px;
+}
+
+.ref-card .ref-card-container {
+    background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    padding-top     : 5px;
+    padding-bottom  : 5px;
+}
+
+.ref-card .ref-card-container .ref-card-body {
+    padding        : 7px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-wrap      : wrap;
+    gap            : 15px;
+}
+
+.ref-card .ref-card-container .ref-card-body .ref-card-content {
+    display         : flex;
+    align-items     : flex-start;
+    justify-content : flex-start;
+    width           : 45%;
+    background-color: var(--ref-card);
+    box-shadow      : 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
+    border-radius   : 7px;
+    padding         : 7px;
+    padding-right   : 0;
+    color           : #340978;
+}
+
+.ref-card .ref-card-container .ref-card-body .ref-card-content .ref-icon {
+    font-size       : 17px;
+    margin-right    : 10px;
+    padding         : 7px;
+    background-color: var(--ref-icon);
+    border-radius   : 7px;
+}
+
+.ref-card .ref-card-container .ref-card-body .ref-card-content .ref-bal {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+.ref-card .ref-card-container .ref-card-body .ref-card-content .ref-bal h2 {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 13px;
+    text-align         : center;
+    padding-top        : 4px;
+
+}
+
+.ref-card .ref-card-container .ref-card-body .ref-card-content .ref-bal span {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 11px;
+    font-weight        : 500;
+
+
+}
+
+.ref-history {
+    padding: 10px;
+}
+
+.ref-history .ref-hist-container {
+    background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    padding-top     : 5px;
+    padding-bottom  : 5px;
+    overflow        : hidden;
+    margin-bottom   : 72px;
+}
+
+.ref-history .ref-hist-container .ref-hist-title {
+    text-align    : left;
+    font-size     : 17px;
+    font-weight   : 600;
+    padding       : 5px;
+    padding-bottom: 10px;
+    padding-left  : 9px;
+    color         : #350D73;
+}
+
+.ref-history .ref-hist-container .ref-hist-body {
+    padding-left  : 10px;
+    padding-right : 10px;
+    overflow-y    : auto;
+    height        : 350px;
+    max-height    : 400px;
+    display       : flex;
     flex-direction: column;
-    color: #FFF;
+    gap           : 10px;
+
 }
-.referral .ref-container .ref-body .ref-content h4{
-    font-size: 13px;
-    color: #ffffffdc;
-    text-align: center;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content {
+    display         : flex;
+    justify-content : space-between;
+    align-content   : center;
+    background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    padding-left    : 5px;
+    padding-right   : 5px;
+    padding-top     : 6px;
+    padding-bottom  : 6px;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-const {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-const {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+    gap            : 7px;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-const .ref-averta img.ref-img {
+    object-fit   : cover;
+    border-radius: 50px;
+    border       : #0c0292 2px solid;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-const .ref-hist-name {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    flex-direction : column;
+    color          : #350D73;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-const .ref-hist-name h2 {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 14px;
+    font-weight        : 600;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-const .ref-hist-name span {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 9px;
+    font-weight        : 500;
+}
+
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-state {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    color          : #350D73;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-state h2 {
+
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 14px;
+    font-weight        : 600;
+    text-align         : center;
+}
+
+.ref-history .ref-hist-container .ref-hist-body .ref-hist-content .ref-hist-state span {
+    font-size  : 9px;
     font-weight: 500;
-    padding-top: 9px;
+    text-align : center;
 }
-.referral .ref-container .ref-body .ref-content h2{
-    font-size: 15px;
-    color: #FFF;
-    text-align: center;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+
+.dash-py {
+    padding       : 10px;
+    padding-top   : 4px;
+    padding-bottom: 4px;
+}
+
+.dash-py .dash-py-container {
+    background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+}
+
+.dash-py .dash-py-container .dash-py-body {
+    padding-left   : 7px;
+    padding-right  : 7px;
+    padding-top    : 10px;
+    padding-bottom : 10px;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.dash-py .dash-py-container .dash-py-body .dash-py-content {
+    display         : flex;
+    align-items     : flex-start;
+    justify-content : flex-start;
+    width           : 45%;
+    background-color: var(--py);
+    box-shadow      : 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
+    border-radius   : 7px;
+    padding         : 7px;
+    padding-right   : 0;
+    color           : #340978;
+}
+
+.dash-py .dash-py-container .dash-py-body .dash-py-content .dash-py-icon {
+    background-color: var(--p-y);
+    font-size       : 17px;
+    margin-right    : 10px;
+    padding         : 7px;
+    border-radius   : 7px;
+}
+
+.dash-py .dash-py-container .dash-py-body .dash-py-content .dash-py-name {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+.dash-py .dash-py-container .dash-py-body .dash-py-content .dash-py-name h2 {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-top: 2px;
+    margin-inline-end  : 0px;
+    font-size          : 13px;
+    text-align         : center;
+    padding-top        : 4px;
+
 }
-.referral .ref-container .ref-body .ref-content span{
-    font-size: 9px;
-    color: #ffffffd0;
+
+.dash-py .dash-py-container .dash-py-body .dash-py-content .dash-py-name span {
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-size          : 11px;
+    font-weight        : 500;
+}
+
+.dash-act {
+    padding   : 10px;
+    margin-top: 68px;
+}
+
+.dash-act .dash-act-container {
+    background   : linear-gradient(106deg, #7c0192 20.45%, rgba(75, 8, 128, 0.75) 34.59%, rgba(0, 89, 89, 0.767) 55.73%, rgba(51, 0, 85, 0.87) 75.56%);
+    border-radius: 5px;
+    box-shadow   : 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    color        : #fff;
+    padding      : 7px;
+}
+
+.dash-act .dash-act-container .dash-act-body {
+    width         : 100%;
+    padding-bottom: 7px;
+}
+
+.dash-act .dash-act-container .dash-act-body .dash-act-content {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : flex-start;
+    flex-direction : column;
+    color          : #FFF;
+    padding-left   : 10px;
+}
+
+.dash-act .dash-act-container .dash-act-body .dash-act-content h4 {
+    font-size          : 13px;
+    color              : #ffffffdc;
+    text-align         : center;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    font-weight        : 500;
+    padding-top        : 9px;
+}
+
+.dash-act .dash-act-container .dash-act-body .dash-act-content h2 {
+    font-size          : 15px;
+    color              : #FFF;
+    text-align         : center;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+    padding-top        : 2px;
+}
+
+.dash-act .dash-act-container .dash-act-body .dash-act-content span {
+    font-size : 9px;
+    color     : #ffffffd0;
     text-align: center;
 }
+
+.stake {
+    padding: 10px;
+}
+
+.stake .stake-container {
+    background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+}
+
+.stake .stake-container .stake-body {
+    padding: 8px;
+    color  : #350D73;
+}
+
+.stake .stake-container .stake-body .stake-content {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    padding        : 9px;
+}
+
+.stake .stake-container .stake-body .stake-content h2 {
+    font-size          : 22px;
+    text-align         : center;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+}
+
+.stake .stake-container .stake-body .stake-content p {
+    font-size : 14px;
+    text-align: center;
+}
+.stake .stake-container .stake-body .stake-content button.stake-act {
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #350D73;
+}
+.stake .stake-container .stake-body .stake-content button.stake-act:hover {
+    color: #350D73;
+    background-color: #fff;
+    border: 2px solid #350D73;
+  }
