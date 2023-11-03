@@ -9,6 +9,7 @@ const { userUpgradeGet} = require("../../controllers/user/upgrade");
 const { userTaskGet} = require("../../controllers/user/task");
 const { userpublishProductGet} = require("../../controllers/user/publishProduct");
 const { userProductVendorGet} = require("../../controllers/user/productVendor");
+const { userProductListGet} = require("../../controllers/user/productlist");
 const { userSellerGet} = require("../../controllers/user/sellerPortal");
 const { userAdduserGet} = require("../../controllers/user/add-new-user");
 const { userLeaderboardGet} = require("../../controllers/user/leaderBoard");
@@ -47,15 +48,17 @@ userRoute.route("/task").get(userTaskGet);
 //REFERRAL DASHBOARD
 userRoute.route("/referral").get(userReferralGet);
 
-
 //MARKET DASHBOARD
 userRoute.route("/market/shop").get(userShopGet);
 
 //ADD NEW PRODUCT
-userRoute.route("/market/shop/publish-product").get(userpublishProductGet);
+userRoute.route("/vendor/publish-product").get(userpublishProductGet);
 
 //PRODUCT VENDOR
-userRoute.route("/market/shop/vendor").get(userProductVendorGet);
+userRoute.route("/vendor/dashboard").get(userProductVendorGet);
+
+//PRODUCT LIST
+userRoute.route("/vendor/product-list").get(userProductListGet);
 
 //SELLER PORTAL
 userRoute.route("/market/shop/affiliate").get(userSellerGet);

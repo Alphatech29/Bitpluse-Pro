@@ -48,22 +48,32 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const tabs = document.querySelectorAll('.buydata2');
-const lists = document.querySelectorAll('.Lists');
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        // Remove active class from all tabs and lists
-        tabs.forEach(t => t.classList.remove('active'));
-        lists.forEach(list => list.classList.remove('active'));
+function initializeTabSwitching() {
+  // Get the tab and body elements
+  const tabButtons = document.querySelectorAll('.shop-tab');
+  const tabBodies = document.querySelectorAll('.shop-body');
 
-        // Add active class to clicked tab and corresponding list
-        tab.classList.add('active');
-        const tabId = tab.getAttribute('data-tab');
-        const list = document.querySelector(`#${tabId}`);
-        list.classList.add('active');
+  // Add click event listeners to the tab buttons
+  tabButtons.forEach(tabButton => {
+    tabButton.addEventListener('click', () => {
+      // Remove the 'active' class from all tab buttons and bodies
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabBodies.forEach(body => body.classList.remove('active'));
+
+      // Add the 'active' class to the clicked tab button and corresponding body
+      tabButton.classList.add('active');
+      const tabId = tabButton.getAttribute('data-tab');
+      const correspondingBody = document.getElementById(tabId);
+      correspondingBody.classList.add('active');
     });
-});
+  });
+}
+
+// Call the function to initialize tab switching
+initializeTabSwitching();
+
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -133,6 +143,82 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
+   document.addEventListener('DOMContentLoaded', function () {
+    // Get all tab items and content items
+    const tabItems = document.querySelectorAll('.venor-tab-21');
+    const contentItems = document.querySelectorAll('.vendor-hist-body');
+  
+  // Set the initial display for the first tab's content to "flex"
+  contentItems[0].style.display = 'flex';
+
+  tabItems.forEach(tabItem => {
+      tabItem.addEventListener('click', function () {
+          // Remove the 'active' class from all tab items
+          tabItems.forEach(item => {
+              item.classList.remove('active');
+          });
+
+          // Add the 'active' class to the clicked tab
+          tabItem.classList.add('active');
+
+          // Hide all content items
+          contentItems.forEach(contentItem => {
+              contentItem.style.display = 'none';
+          });
+
+          // Get the corresponding content item based on the data-tab attribute
+          const dataTab = tabItem.getAttribute('data-tab');
+          const correspondingContent = document.getElementById(dataTab);
+
+          // Show the corresponding content item
+          correspondingContent.style.display = 'flex';
+      });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const viewIcon = document.querySelector(".view");
+  const popup = document.querySelector(".view-popup");
+  const closeBtn = document.querySelector(".vendor-close-btn");
+
+  viewIcon.addEventListener("click", function () {
+    if (popup.style.display === "flex") {
+      popup.style.display = "none";
+      enableScroll();
+    } else {
+      popup.style.display = "flex";
+      disableScroll();
+    }
+  });
+
+  closeBtn.addEventListener("click", function () {
+    popup.style.display = "none";
+    enableScroll();
+  });
+
+  function disableScroll() {
+    // Get the current scroll position
+    const scrollY = window.scrollY;
+
+    // Add styles to disable scrolling
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+  }
+
+  function enableScroll() {
+    // Remove the styles to enable scrolling
+    const scrollY = parseInt(document.body.style.top, 10);
+    document.body.style.position = "";
+    document.body.style.top = "";
+    
+    // Scroll to the previous position
+    window.scrollTo(0, Math.abs(scrollY));
+  }
+});
+
+
+
 
 // This code is for product image upload
     const input = document.getElementById('imageUpload');
@@ -177,10 +263,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-    
-
-
 
     
+
     
-    
+  
