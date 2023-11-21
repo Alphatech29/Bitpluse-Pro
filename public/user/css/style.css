@@ -996,13 +996,6 @@ h4.titp{
 
 
 
-
-
-
-
-
-
-
 .atm-card{
     padding: 10px;
     padding-top: 90px;
@@ -1014,25 +1007,25 @@ h4.titp{
     padding: 10px;
     color: #fff;
     flex-direction: column;
-    height: 163px;
+  
 }
 .atm-card .atm-card-container .card-title{
     display: flex;
     justify-content: end;
     align-items: end;
     text-align: end;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
 }
 .atm-card .atm-card-container .atm-contactless{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 4px;
 }
 .atm-card .atm-card-container .atm-contactless ion-icon{
     text-align: end;
-    font-size: 27px;
+    font-size: 20px;
     transform: rotate(90deg);
 }
 .atm-card .atm-card-container .atm-num{
@@ -1040,22 +1033,24 @@ h4.titp{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding-top: 12px;
+    padding-top: 10px;
 }
-.atm-card .atm-card-container .atm-num h2{
-    font-size: 18px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    cursor: none;
+.atm-card .atm-card-container .atm-num .bank-num{
+    font-size: 20px;
+    font-weight: 600;
     letter-spacing: 3px;
+    color: #FFF;
+    -webkit-appearance: none;
+    appearance: none;
+    text-decoration: none;
+    text-underline-offset: none;
 }
+
 .at-num{
     text-decoration: none !important;
 }
-.atm-card .atm-card-container .atm-num span{
-    font-size: 12px;
+.atm-card .atm-card-container .atm-num span#bank-name{
+    font-size: 10px;
     font-weight: 500;
 }
 .atm-card .atm-card-container .atm-bal{
@@ -1067,7 +1062,7 @@ h4.titp{
     padding-top: 17px;
 }
 .atm-card .atm-card-container .atm-bal h2.atm-cb{
-    font-size: 17px;
+    font-size: 13px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;

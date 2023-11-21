@@ -1152,10 +1152,36 @@
     text-align: center;
 }
 
+.ref-wd-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+}
+.ref-wd-container button.ref-withdraw{
+    background-color: #005c81;
+    border-radius: 7px;
+    display: flex;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 70vw;
+    font-size: 15px;
+    border: none;
+}
+.ref-wd-container button.ref-withdraw:hover{
+   background-color: #581ab4;
+}
+.ref-wd-container button.ref-withdraw .ref-wd-icon{
+  padding-right: 15px;
+  font-size: 20px;
+}
+
 .ref-card {
     padding: 10px;
 }
-
 .ref-card .ref-card-container {
     background-color: #FFF;
     border-radius   : 5px;
