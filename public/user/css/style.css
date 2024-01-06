@@ -452,6 +452,8 @@ h4.titp{
     background-color: #5611bd;
 }
 
+
+
 .cent {
     display        : flex;
     justify-content: center;
@@ -998,7 +1000,7 @@ h4.titp{
 
 .atm-card{
     padding: 10px;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 .atm-card .atm-card-container{
     background: linear-gradient(102deg, #390085 11.05%, rgb(70, 1, 116) 33.7%, rgba(150, 0, 188, 0.99) 57%, rgba(92, 0, 167, 0.99) 80.92%);
@@ -1035,15 +1037,14 @@ h4.titp{
     flex-direction: column;
     padding-top: 10px;
 }
-.atm-card .atm-card-container .atm-num .bank-num{
+.atm-card .atm-card-container .atm-num .bank-num, .bank-num a{
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 3px;
     color: #FFF;
     -webkit-appearance: none;
     appearance: none;
-    text-decoration: none;
-    text-underline-offset: none;
+    text-decoration: none !important;
 }
 
 .at-num{

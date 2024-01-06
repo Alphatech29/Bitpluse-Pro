@@ -247,17 +247,156 @@
     margin-inline-end: 0px;
 }
 
-.upgrade-container {
-    width          : 100%;
-    display        : flex;
-    justify-content: center;
-    height         : auto;
+.upgrade{
+    padding: 10px;
+    padding-top:80px ;
+}
+.upgrade .upgrade-container{
     border-radius  : 7px;
     background     : #FFF;
     box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     overflow       : hidden;
-
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.upgrade .upgrade-container .upgrade-body{
+    position: relative;
+    display        : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius  : 7px;
+    background     : #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    overflow       : hidden;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    color: #350D73;
+    width: 95%;
+}
+
+.upgrade .upgrade-container .upgrade-body .upgrade-header{
+    display        : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.upgrade .upgrade-container .upgrade-body .upgrade-header h2.ht{
+   font-size: 18px;
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+}
+.upgrade .upgrade-container .upgrade-body .upgrade-content{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .upgrade .upgrade-container .upgrade-body .upgrade-content ul{
+text-decoration: none;
+list-style: none;
+ }
+ .upgrade .upgrade-container .upgrade-body .upgrade-content ul li svg{
+    padding-right: 10px;
+    font-size: 13;
+ }
+ .upgrade .upgrade-container .upgrade-body .sub-btn{
+    background-color: #350D73;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #FFF;
+    border-radius  : 7px;
+ }
+ .upgrade .upgrade-container .upgrade-body .sub-btn.active{
+    background-color: #00da41;
+ }
+ .upgrade .upgrade-container .upgrade-body .sub-btn.inactive{
+    background-color: #e60c04;
+ }
+ .upgrade .upgrade-container .upgrade-body .sub-btn a{
+    font-size: 16;
+    color: #FFF;
+    text-decoration: none;
+ }
+
+ 
+.stake {
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.stake .stake-container {
+    background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+}
+
+.stake .stake-container .stake-body {
+    padding: 8px;
+    color  : #350D73;
+}
+
+.stake .stake-container .stake-body .stake-content {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    padding        : 9px;
+}
+
+.stake .stake-container .stake-body .stake-content h2 {
+    font-size          : 22px;
+    text-align         : center;
+    margin-block-start : 0em;
+    margin-block-end   : 0em;
+    margin-inline-start: 0px;
+    margin-inline-end  : 0px;
+}
+
+.stake .stake-container .stake-body .stake-content p {
+    font-size : 14px;
+    text-align: center;
+}
+.stake .stake-container .stake-body .stake-content button.stake-act {
+  border: none;
+  border-radius: 7px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #350D73;
+}
+.stake .stake-container .stake-body .stake-content button.stake-act:hover {
+    color: #350D73;
+    background-color: #fff;
+    border: 1px solid #350D73;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .table-content {
     border-radius: 7px;
@@ -391,6 +530,8 @@
     padding-right: 10px;
 }
 .addproduct {
+    margin-top: 70px;
+    margin-bottom: 70px;
     height          : auto;
     background-color: #fff;
     display         : flex;
