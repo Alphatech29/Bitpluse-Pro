@@ -61,6 +61,61 @@ tbody tr:nth-child(even) {
 
 
 
+function toggleDetails() {
+    var detailsPopup = document.getElementById('showDetails');
+    var payPopup = document.getElementById('pay');
+
+ 
+    var detailsDisplay = window.getComputedStyle(detailsPopup).display;
+    var payDisplay = window.getComputedStyle(payPopup).display;
+
+    if (detailsDisplay === 'flex' && payDisplay === 'flex') {
+        detailsPopup.style.display = 'none';
+        payPopup.style.display = 'none';
+    } else {
+        detailsPopup.style.display = 'flex';
+        showPayModal();  
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var closeButton = document.querySelector('.close-btn button');
+    closeButton.addEventListener('click', toggleDetails);
+});
+
+function showModal() {
+    if (typeof bootstrap !== 'undefined') {
+        new bootstrap.Modal(document.getElementById('myModal')).show();
+    } else {
+        console.error('Framework is not loaded. Make sure to include the file.');
+    }
+}
+
+function showPayModal() {
+    if (typeof bootstrap !== 'undefined') {
+      
+        var payModal = document.createElement('div');
+        payModal.classList.add('modal');
+        payModal.id = 'pay';
+        payModal.tabIndex = -1;
+        payModal.innerHTML = `
+       
+        `;
+
+        document.body.appendChild(payModal);
+
+        new bootstrap.Modal(payModal).show();
+    } else {
+        console.error('Framework is not loaded. Make sure to include the file.');
+    }
+}
+
+const addToCartButton = document.getElementById('addtocart');
+addToCartButton.addEventListener('click', showModal);
+
+
+const proceedButton = document.getElementById('proceed');
+proceedButton.addEventListener('click', showPayModal);
 
 
 

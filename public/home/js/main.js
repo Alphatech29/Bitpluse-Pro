@@ -1,30 +1,80 @@
+// Helper function to get elements by ID and return as an array
+const getElementByIdAll = (id) => Array.from(document.querySelectorAll(`#${id}`));
+
+// Helper function to get computed style for all elements in an array
+const getComputedStyleAll = (elements) => elements.map(element => window.getComputedStyle(element));
+
+// Function to toggle details
 function toggleDetails() {
-    var detailsPopup = document.getElementById('showDetails');
-    if (detailsPopup.style.display === 'flex') {
-        detailsPopup.style.display = 'none';
+  const detailsPopup = getElementByIdAll('showDetails')[0];
+  const detailsDisplay = getComputedStyleAll([detailsPopup])[0].display;
+
+  if (detailsDisplay === 'flex') {
+    detailsPopup.style.display = 'none';
+  } else {
+    detailsPopup.style.display = 'flex';
+    showPayModal();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const closeButton = document.querySelectorAll('.close-btn button')[0];
+  closeButton.addEventListener('click', toggleDetails);
+});
+
+function showModal() {
+  if (typeof bootstrap !== 'undefined') {
+    new bootstrap.Modal(getElementByIdAll('myModal')[0]).show();
+  } else {
+    console.error('Bootstrap is not loaded. Make sure to include the file.');
+  }
+}
+
+function showPayModal() {
+  if (typeof bootstrap !== 'undefined') {
+    // Add your logic for showing the pay modal
+  } else {
+    console.error('Bootstrap is not loaded. Make sure to include the file.');
+  }
+}
+
+const addToCartButtons = document.querySelectorAll('#addtocart');
+addToCartButtons.forEach((button) => button.addEventListener('click', showModal));
+
+
+
+
+// Code to open product more info
+function openCustomModal() {
+    if (typeof bootstrap !== 'undefined') {
+        new bootstrap.Modal(getElementByIdAll('pro-details')[0]).show();
     } else {
-        detailsPopup.style.display = 'flex';
+        console.error('Framework is not loaded. Make sure to include the file.');
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    var closeButton = document.querySelector('.close-btn button');
-    closeButton.addEventListener('click', toggleDetails);
+// Using getElementByIdAll to get the anchor elements and add event listeners
+getElementByIdAll('moreDetailsLink').forEach(link => {
+    link.addEventListener('click', openCustomModal);
 });
 
 
-function showModal() {
-    if (typeof bootstrap !== 'undefined') {
-      new bootstrap.Modal(document.getElementById('myModal')).show();
-    } else {
-      console.error('Framework is not loaded. Make sure to include file.');
-    }
-  }
-
-  const addToCartButton = document.getElementById('addtocart');
-  addToCartButton.addEventListener('click', showModal);
 
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Call the function to populate the states initially
+    populateStates();
+
+    // Add an event listener to the "delivery-state" dropdown
+    const stateSelect = document.getElementById("delivery-state");
+    const lgaSelect = document.getElementById("delivery-lga");
+
+    stateSelect.addEventListener("change", function () {
+      populateLGAs();
+    });
+  });
 
  // Array of Nigeria states
  const nigeriaStates = [
@@ -34,7 +84,7 @@ function showModal() {
     "Yobe", "Zamfara","FCT"
 ];
 
-// Replace this data with the actual mapping of states to LGAs in your application
+// Replace this data with the actual mapping of states to LGAs
 const stateToLGAMap = {
     "Abia": [
         "Aba North", "Aba South", "Arochukwu", "Bende", "Ikwuano",
@@ -282,42 +332,56 @@ const stateToLGAMap = {
     ],
 };
 
-// Function to populate the delivery-state select element with Nigeria states
 function populateStates() {
     const selectElement = document.getElementById("delivery-state");
 
     nigeriaStates.forEach(state => {
-        const option = document.createElement("option");
-        option.value = state;
-        option.textContent = state;
-        selectElement.appendChild(option);
+      const option = document.createElement("option");
+      option.value = state;
+      option.textContent = state;
+      selectElement.appendChild(option);
     });
-}
+  }
 
-// Function to populate the delivery-lga select element based on the selected state
-function populateLGAs() {
+  function populateLGAs() {
     const stateSelect = document.getElementById("delivery-state");
     const lgaSelect = document.getElementById("delivery-lga");
 
-    // Clear existing options
     lgaSelect.innerHTML = '<option selected disabled>Choose the delivery area (LGA).</option>';
 
-    // Get the selected state
     const selectedState = stateSelect.value;
 
-    // Check if a state is selected
     if (selectedState && stateToLGAMap[selectedState]) {
-        // Populate the delivery-lga select element with LGAs for the selected state
-        stateToLGAMap[selectedState].forEach(lga => {
-            const option = document.createElement("option");
-            option.value = lga;
-            option.textContent = lga;
-            lgaSelect.appendChild(option);
-        });
+      stateToLGAMap[selectedState].forEach(lga => {
+        const option = document.createElement("option");
+        option.value = lga;
+        option.textContent = lga;
+        lgaSelect.appendChild(option);
+      });
     }
-}
+  }
 
-// Call the function to populate the delivery-state select element
-populateStates();
+// This code for payment check box on checkout modal
+document.addEventListener("DOMContentLoaded", function () {
+    const onlinepayCheckbox = document.getElementById("onlinepay");
+    const bitpluseCheckbox = document.getElementById("bitpluse");
+
+    onlinepayCheckbox.addEventListener("click", function () {
+      if (onlinepayCheckbox.checked) {
+        bitpluseCheckbox.checked = false;
+      }
+    });
+
+    bitpluseCheckbox.addEventListener("click", function () {
+      if (bitpluseCheckbox.checked) {
+        onlinepayCheckbox.checked = false;
+      }
+    });
+  });
 
 
+   // Remove Bootstrap styling on the select element
+   document.addEventListener('DOMContentLoaded', function() {
+    var selectElement = document.querySelector('.form-select');
+    selectElement.classList.add('custom-no-border');
+  });

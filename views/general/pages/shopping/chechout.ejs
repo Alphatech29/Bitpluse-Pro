@@ -3,15 +3,11 @@
       <div class="modal-content ">
         <div class="modal-header">
             <div class="modal-close">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="modal-title">
                 <h5>Tricks and Tips for baking Commercial Breads,Pizza,Cookies,Scones,Cakes,Pies,and many more with Step by Step Instructions on My Unique Recipes.</h5>
-                <div class="amount">
-                    <span>Price:₦10,000</span>
-                    <!-- <span>Vat:₦200</span>
-                    <span>Total= ₦10,200</span> -->
-                </div>
+               
             </div>
         </div>
         <div class="modal-body">
@@ -38,6 +34,14 @@
                 <span>Please provide the phone number where we can reach you for order delivery purposes.</span>
             </div>
 
+            <div class="form-group">
+                <div class="input-chech-out">
+                    <span class="icon"><i class="fa-solid fa-list"></i></span>
+                      <input type="number" name="num" placeholder="How many quantities?" required>
+                </div>
+                <span>How many quantities?</span>
+            </div>
+
             <div class="billing-info">
                 <h4>Billing Information</h4>
                 <p>Kindly provide a comprehensive delivery address to ensure accurate and prompt delivery of the product to your location.</p>
@@ -45,7 +49,7 @@
             <div class="form-group">
                 <div class="input-chech-out">
                     <span class="icon"><i class="fa-solid fa-list"></i></span>
-                    <select class="form-select" id="delivery-state" onchange="populateLGAs()" required>
+                    <select class="form-select custom-no-border" id="delivery-state" onchange="populateLGAs()" required>
                         <option selected disabled>Choose your delivery state.</option>
                       </select>
                 </div>
@@ -53,7 +57,7 @@
             <div class="form-group">
                 <div class="input-chech-out">
                     <span class="icon"><i class="fa-solid fa-list"></i></span>
-                    <select class="form-select" id="delivery-lga" required>
+                    <select class="form-select custom-no-border" id="delivery-lga" required>
                         <option selected disabled>Choose the delivery area (LGA).</option>
                       </select>
                 </div>
@@ -67,16 +71,47 @@
                 <span>Kindly provide a comprehensive delivery address, including details such as Building Number, Street, Area, City, and State.</span>
             </div>
 
+            <div class="amount">
+                <span><b>Price:</b> ₦10,000</span>
+                <span><b>Shipping Fee:</b> N/A</span>
+                <span><b>Vat:</b> ₦200</span>
+                <span class="tt"><b>Total=</b> ₦10,200</span>
+            </div>
 
-            </form>
+              <!--Payment Option-->
+        <div class="payment">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="onlinepay">
+                <label class="form-check-label" for="onlinepay">
+                  <h3>100% Secure Online Payment</h3>
+                  <span>Choose Mastercard/VISA/Verve or bank transfer via USSD or internet banking on our secure payment page after clicking here. Secure by flutterwave and paystack</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="bitpluse">
+                <label class="form-check-label" for="bitpluse">
+                  <h3>Pay with Bitpluse Wallet</h3>
+                  <span>By employing this approach, you acknowledge and grant our system permission to debit your wallet.</span>
+                </label>
+              </div>
+        </div>
+        </form>
+      
+
+
+
+            <div class="pro-note">
+                <p><strong>Note:</strong> Seller will discuss delivery fee based on your location. Expect goods in 7 business days. Contact customer service for purchase assistance.</p>
+            </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Procced</button>
+            <button type="button" class="close" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="proceed" class="procced">Procced</button>
         </div>
+   
       </div>
     </div>
   </div>
 
 
-  
+ 

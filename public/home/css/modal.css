@@ -2,7 +2,7 @@
     --primary-color  : #350D73;
     --secondary-color: #240e42;
     --thd-color      : #150a29;
-    --Text-color     : #DEDCDC;
+    --Text-color     : #f7f7f7;
     --btn-color      : #ffb62f;
     --zip-color      : #01ff7b;
     --carbor-color   : #f80474;
@@ -12,6 +12,7 @@
 .modal .modal-dialog .modal-content {
     background-color: #1d1035;
     color           : var(--Text-color);
+    display: flex;
 }
 
 .modal .modal-dialog .modal-content .modal-header {
@@ -28,8 +29,10 @@
 }
 
 .modal .modal-dialog .modal-content .modal-header .modal-close button {
-    color    : var(--Text-color) !important;
     font-size: 27px;
+    background-color: transparent;
+    border: 0;
+    color: var(--carbor-color);
 }
 
 .modal .modal-dialog .modal-content .modal-header .modal-title {
@@ -39,16 +42,6 @@
 .modal .modal-dialog .modal-content .modal-header .modal-title h5 {
     font-size : 15.6px;
     margin-top: 30px;
-}
-
-.modal .modal-dialog .modal-content .modal-header .modal-title .amount {
-    display       : flex;
-    flex-direction: column;
-}
-
-.modal .modal-dialog .modal-content .modal-header .modal-title span {
-    font-size: 12.2px;
-    color    : var(--zip-color);
 }
 .modal .modal-dialog .modal-content .modal-body form .form-group{
     display: flex;
@@ -147,4 +140,112 @@
   .modal .modal-dialog .modal-content .modal-body form .form-group .input-chech-out select.form-select option:checked {
     color: var(--Text-color);
   }
-         
+  .pro-note p{
+    font-size: 12.5px;
+    margin-bottom: 0;
+ }
+ .modal .modal-dialog .modal-content .modal-body form .amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    margin-bottom: 15px;
+    gap: 2px;
+ }
+ .modal .modal-dialog .modal-content .modal-body form .amount span{
+    font-size: 13px;
+    color: var(--zip-color);
+ }
+ .modal .modal-dialog .modal-content .modal-body form .amount span.tt{
+    border-bottom: 2px solid var(--Text-color);
+    border-top: 2px solid var(--Text-color);
+    padding: 5px;
+    padding-left: 0;
+ }
+  .modal .modal-dialog .modal-content .modal-footer .procced {
+   background-color: var(--carbor-color);
+   color: var(--Text-color);
+   border: none;
+   outline: none;
+   border-radius: 7px;
+   padding: 7px;
+}
+.modal .modal-dialog .modal-content .modal-footer .procced:hover {
+    background-color: transparent;
+    color: var(--Text-color);
+    border: 2px solid #f80474;
+ }
+
+ .modal .modal-dialog .modal-content .modal-footer .btn-primary:focus {
+  outline: none;
+ }
+ .modal .modal-dialog .modal-content .modal-footer .close {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 7px;
+
+    background-color: transparent;
+    color: var(--Text-color);
+    border: 2px solid #f80474;
+ }
+ .modal .modal-dialog .modal-content .modal-footer .close:hover {
+    background-color: var(--carbor-color);
+    color: var(--Text-color);
+  }
+  .modal .modal-dialog .modal-content .modal-footer .close:focus {
+   outline: none;
+  }
+  .modal .modal-dialog .modal-content .modal-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+ }
+ .modal .modal-dialog .modal-content .modal-body form .payment{
+   gap: 15px;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 25px;
+   border-bottom: 2px dashed var(--carbor-color);
+   border-top: 2px dashed var(--carbor-color);
+   padding-top: 17px;
+   padding-bottom: 17px;
+ }
+ .modal .modal-dialog .modal-content .modal-body form .payment .form-check{
+    display: block;
+    min-height: 0rem;
+    padding-left: 0em;
+    margin-bottom: 0.1rem;
+ }
+ .modal .modal-dialog .modal-content .modal-body form .payment .form-check input.form-check-input{
+ background-color: transparent;
+ display: none;
+  }
+  .modal .modal-dialog .modal-content .modal-body form .payment .form-check label.form-check-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.288), 1px 1px 4px 0px rgba(204, 0, 204, 0.281) inset;
+    border-radius:7px ;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .modal .modal-dialog .modal-content .modal-body form .payment .form-check label.form-check-label h3{
+   font-size: 13.5px;
+  }
+  .modal .modal-dialog .modal-content .modal-body form .payment .form-check label.form-check-label span{
+    font-size: 10.5px;
+   }
+   .modal .modal-dialog .modal-content .modal-body form .payment .form-check input.form-check-input:checked + .form-check-label {
+    border: 2px solid var(--zip-color);
+    padding: 15px;
+    display: inline-block;
+    outline: none;
+}
+.custom-no-border {
+    border: none !important;
+    box-shadow: none !important;
+  }
