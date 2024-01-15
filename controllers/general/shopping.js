@@ -7,3 +7,14 @@ exports.shoppingPageGet = asyncHandler(async (req, res, next) => {
     })
 });
 
+
+
+
+
+
+exports.jobPageGet = asyncHandler(async (req, res, next) => {
+    
+    return res.render("general/pages/job", {
+        title: "Job"
+    })
+});

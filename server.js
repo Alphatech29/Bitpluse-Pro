@@ -6,6 +6,7 @@ const logger = require("./helpers/logger");
 const errorMiddleWare = require("./middleware/errorMiddleware");
 const cookieParser = require("cookie-parser");
 const userRoute = require("./routes/user/user");
+const authRoute = require("./routes/auth/auth");
 const generalRoute = require('./routes/general/general');
 
 try {
@@ -38,10 +39,13 @@ app.use(
 
 //ROUTES
 
+//AUTH ROUTES
+app.use("/auth", authRoute)
+
 //GENERAL ROUTE
 app.use("/", generalRoute)
 
-  //USER ROUTE
+//USER ROUTE
   app.use("/user", userRoute);
 
   //Error Middleware

@@ -382,6 +382,90 @@ document.addEventListener("DOMContentLoaded", function () {
 
    // Remove Bootstrap styling on the select element
    document.addEventListener('DOMContentLoaded', function() {
-    var selectElement = document.querySelector('.form-select');
+    const selectElement = document.querySelector('.form-select');
     selectElement.classList.add('custom-no-border');
   });
+  
+
+
+ //Code for user rating
+ let userRating = 0;
+
+ function rate(stars) {
+   userRating = stars;
+   updateStars();
+
+   console.log('User rated:', userRating);
+ }
+
+ function updateStars() {
+   const starElement = document.querySelector('.star-rating');
+
+   starElement.innerHTML = '';
+
+   for (let i = 0; i < 5; i++) {
+     const star = document.createElement('span');
+     star.innerHTML = '&#9733;';
+     if (i < userRating) {
+       star.classList.add('checked');
+     }
+     starElement.appendChild(star);
+   }
+ }
+
+
+ 
+//This code work on job modal
+  // JavaScript to open the modal when clicking on any card with the class 'open-job-info'
+  document.querySelectorAll('.open-job-info').forEach(function(cardTitle) {
+    cardTitle.addEventListener('click', function () {
+      document.getElementById('Job-info').style.display = 'block';
+    });
+  });
+
+  // Close the modal when the close button or outside the modal is clicked
+  function openModal() {
+    document.getElementById('Job-info').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('Job-info').style.display = 'none';
+  }
+
+
+//Code to fetch countries on sign-up page
+fetch('https://restcountries.com/v3.1/all')
+.then(response => response.json())
+.then(data => {
+    const countrySelect = document.getElementById('countrySelect');
+
+    data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+
+    data.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country.cca2; 
+        option.textContent = country.name.common;
+        countrySelect.appendChild(option);
+    });
+})
+.catch(error => {
+    console.error('Error fetching countries:', error);
+});
+
+
+//Thia code for hide or show password
+function togglePasswordVisibility(inputId, iconElement) {
+  var passwordInput = document.getElementById(inputId);
+
+  if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      iconElement.innerHTML = '<i class="fa-regular fa-eye toggle-icon"></i>';
+  } else {
+      passwordInput.type = 'password';
+      iconElement.innerHTML = '<i class="fa-regular fa-eye-slash toggle-icon"></i>';
+  }
+}
+
+
+
+

@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bitpluse-design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Best Website" name="description">
+    <meta content="Bitpluse" name="description">
     <meta content="Alphatech Multimedia Technologies" name="author">
+
     <!-- App favicon -->
-    <link rel="shortcut icon" href="/home/image/">
+    <link rel="shortcut icon" href="/image/logo/favicon.png">
 
     <!--Googe Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,10 @@
 
     <!--Custom css-->
     <link rel="stylesheet" href="home/css/main.css">
+    <link rel="stylesheet" href="home/css/main.min.css">
     <link rel="stylesheet" href="home/css/modal.css">
+    <link rel="stylesheet" href="home/css/responsive.css">
+    <title><%= title %></title>
 
 
     <style>
@@ -42,22 +45,22 @@
   <body>
     <header class="nav">
         <div class="header-container">
-            <div class="header-logo"><a href="/"><strong>Bitpluse</strong></a></div>
+            <div class="header-logo"><a href="/"><img src="/image/logo/Bitpluse-Logo.png" alt="" width="50" height="50"></a></div>
             <div class="header-menu">
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/marketplace">Market Place</a></li>
-                    <li><a href="">Job's</a></li>
-                    <li><a href="">Marchant's</a></li>
-                    <li><a href="">Top Earners</a></li>
-                    <li><a href="">Verify</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a href="/job">Job's</a></li>
+                    <li><a href="/merchant">Merchants</a></li>
+                    <li><a href="/top-earner">Top Earners</a></li>
+                    <li><a href="/verify-pin">Verify</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/about-us">About Us</a></li>
                 </ul>
             </div>
             <div class="auth-btn">
-                <a class="login" href="#">Login</a>
-                <a class="reg"  href="#">Register</a>
+                <a class="login" href="/auth/sign-in">Login</a>
+                <a class="reg"  href="/auth/sign-up">Register</a>
             </div>
         </div>
     </header>
