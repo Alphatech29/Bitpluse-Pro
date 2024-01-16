@@ -65,18 +65,16 @@ header.nav .header-container {
     font-weight    : 500;
 }
 
-header.nav .header-container {
-    display        : flex;
-    justify-content: space-between;
-    align-items    : center;
-    color          : #fff;
 
+header.nav .header-container .header-logo {
+    float: left;
 }
 
 header.nav .header-container .header-logo a {
     font-size      : 30px;
     color          : #fff;
     text-decoration: none;
+
 }
 
 header.nav .header-container .header-logo a img {
@@ -85,7 +83,14 @@ header.nav .header-container .header-logo a img {
     height    : 50px;
 }
 
-header.nav .header-container .header-menu ul {
+header.nav .header-container .header-menu {
+    display        : flex;
+    width          : 67%;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header.nav .header-container .header-menu .menu ul {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
@@ -104,6 +109,7 @@ header.nav .header-container .header-menu ul li a {
     color          : #fff;
     list-style     : none;
     text-decoration: none;
+    font-size      : 17px;
 }
 
 header.nav .header-container .header-menu ul li a:hover {
@@ -157,52 +163,86 @@ header.nav .header-container .auth-btn a.reg:hover {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section.hero {
     background-color: var(--primary-color);
     padding-left    : 25px;
     padding-right   : 25px;
-    padding-top: 5rem;
-    
+    padding-top     : 5rem;
+
 }
+
 section.hero .container-fluid {
     color: var(--Text-color);
- 
+
 }
-section.hero .container-fluid .row{
-    display: flex;
+
+section.hero .container-fluid .row {
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 }
+
 section.hero .container-fluid .row .col h1.text-white {
     font-size: 3.4rem;
 }
+
 .hero-btn {
-    margin-top: 50px;
+    margin-top   : 50px;
     margin-bottom: 30px;
 }
-section.hero .container-fluid .row .col .hero-img{
-    display: flex;
+
+section.hero .container-fluid .row .col .hero-img {
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-    padding-bottom: 40px;
+    align-items    : center;
+    margin-top     : -30px;
+    padding-bottom : 40px;
 }
-section.hero .container-fluid .row .col .hero-img img{
+
+section.hero .container-fluid .row .col .hero-img img {
     object-fit: cover;
-    width: 500px;
-    height: 70%;
+    width     : 500px;
+    height    : 70%;
 }
-.hero-btn a{
+
+.hero-btn a {
     background-color: var(--carbor-color);
-    padding: 15px;
-    border-radius: 7px;
-    font-size: 18px;
-    color: var(--Text-color);
-    text-decoration: none;
+    padding         : 15px;
+    border-radius   : 7px;
+    font-size       : 18px;
+    color           : var(--Text-color);
+    text-decoration : none;
 }
-.hero-btn a:hover{
-background-color: transparent;
-border: 2px solid var(--carbor-color);
+
+.hero-btn a:hover {
+    background-color: transparent;
+    border          : 2px solid var(--carbor-color);
 }
 
 section.hero-part2 {
@@ -234,15 +274,17 @@ section.hero-part2 .container-fluid .heading p {
 }
 
 section.hero-part2 .container-fluid .sub-hero {
-    overflow       : hidden;
-    gap            : 20px;
-    padding-left   : 30px;
-    padding-right  : 30px;
-    margin-top     : 25px;
+    overflow     : hidden;
+    gap          : 20px;
+    padding-left : 30px;
+    padding-right: 30px;
+    margin-top   : 25px;
 }
+
 section.hero-part2 .container-fluid .sub-hero .row {
     gap: 20px;
 }
+
 section.hero-part2 .container-fluid .sub-hero .row .sub-hero-content {
     color        : var(--Text-color);
     width        : 32.3%;
@@ -343,7 +385,7 @@ section.footer {
 
 section.footer .container-fluid .row .col-4 {
     padding: 10px;
-   
+
 }
 
 section.footer .container-fluid .row .col-4 .footer-logo {
@@ -890,7 +932,7 @@ section.refund .container-fluid {
 }
 
 section.refund .container-fluid .row {
-    gap    : 25px;
+    gap: 25px;
 }
 
 section.refund .container-fluid .row .col {
@@ -899,7 +941,7 @@ section.refund .container-fluid .row .col {
     padding      : 20px;
     display      : flex;
     gap          : 12px;
-    width: 45%;
+    width        : 32%;
 }
 
 section.refund .container-fluid .row .col .icon {
@@ -1458,11 +1500,11 @@ section.job-filter .container-fluid .job-fit {
     margin-bottom: 30px;
     border       : none;
     border-radius: 7px;
-    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.493), 1px 1px 4px 0px rgba(204, 0, 204, 0.438)inset;
+    box-shadow   : 1px 1px 4px 0px rgba(179, 0, 179, 0.493), 1px 1px 4px 0px rgba(204, 0, 204, 0.438)inset;
 }
 
 section.job-filter .container-fluid .job-fit:focus-within {
-    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.678), 1px 1px 4px 0px rgba(204, 0, 204, 0.61)inset;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.678), 1px 1px 4px 0px rgba(204, 0, 204, 0.61)inset;
 
 }
 
@@ -1474,14 +1516,14 @@ section.job-filter .container-fluid .job-fit select {
     font-size       : 15px;
     border          : none !important;
     outline         : none !important;
-    
+
 }
 
 section.promotion {
     background-color: #e7e7e7;
     padding-left    : 30px;
     padding-right   : 30px;
-   
+
 }
 
 section.promotion .container-fluid {
@@ -1494,16 +1536,17 @@ section.promotion .container-fluid .row {
     padding         : 0;
     border-radius   : 7px;
     background-color: #00559b34;
-    overflow: hidden;
+    overflow        : hidden;
 }
 
 
-section.promotion .container-fluid .row .col{
+section.promotion .container-fluid .row .col {
     overflow: hidden;
-    width: 100%;
+    width   : 100%;
 }
+
 section.promotion .container-fluid .row .col h3 {
-    font-size: 2.7rem;
+    font-size  : 2.7rem;
     padding-top: 15px;
 }
 
@@ -1514,9 +1557,11 @@ section.promotion .container-fluid .row .col p {
 section.promotion .container-fluid .row .col span {
     font-size: 20px;
 }
-section.promotion .container-fluid .row .col .pro-btn{
+
+section.promotion .container-fluid .row .col .pro-btn {
     padding-top: 15px;
 }
+
 section.promotion .container-fluid .row .col .pro-btn a {
     text-decoration : none;
     background-color: var(--primary-color);
@@ -1525,7 +1570,7 @@ section.promotion .container-fluid .row .col .pro-btn a {
     border-radius   : 7px;
     cursor          : pointer;
     font-size       : 15px;
-  
+
 }
 
 section.promotion .container-fluid .row .col a:hover {
@@ -1533,94 +1578,109 @@ section.promotion .container-fluid .row .col a:hover {
 }
 
 section.promotion .container-fluid .row .col .pro-img {
-    width: 100%;
+    width     : 100%;
     object-fit: fill;
 }
 
 section.promotion .container-fluid .row .col .pro-img img {
     object-fit: fill;
-    width: 800px;
-    height: 400px;
+    width     : 800px;
+    height    : 400px;
 }
-section.digital{
+
+section.digital {
     background-color: #DEDCDC;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left    : 30px;
+    padding-right   : 30px;
 }
-section.digital .container-fluid .row .col .digital-img{
+
+section.digital .container-fluid .row .col .digital-img {
     object-fit: cover;
-    overflow: hidden;
-    height: 100%;
+    overflow  : hidden;
+    height    : 100%;
 }
-section.digital .container-fluid .row .col .digital-img img{
-    width:100%;
-    height:100%;
+
+section.digital .container-fluid .row .col .digital-img img {
+    width     : 100%;
+    height    : 100%;
     object-fit: cover;
 }
-section.digital .container-fluid .row .col h2.digital-title{
+
+section.digital .container-fluid .row .col h2.digital-title {
     margin-top: 40px;
-    font-size: 2.1rem;
+    font-size : 2.1rem;
 }
-section.digital .container-fluid .row .col p{
+
+section.digital .container-fluid .row .col p {
     font-size: 1.2rem;
 }
-section.digital .container-fluid .row .col .button{
-    margin-top: 30px;
+
+section.digital .container-fluid .row .col .button {
+    margin-top   : 30px;
     margin-bottom: 50px;
 }
-section.digital .container-fluid .row .col .button a{
-    text-decoration: none;
+
+section.digital .container-fluid .row .col .button a {
+    text-decoration : none;
     background-color: var(--carbor-color);
-    padding: 10px;
-    border-radius: 7px;
-    color: var(--Text-color);
+    padding         : 10px;
+    border-radius   : 7px;
+    color           : var(--Text-color);
 }
-section.digital .container-fluid .row .col .button a:hover{
+
+section.digital .container-fluid .row .col .button a:hover {
     background-color: var(--secondary-color);
-    color: var(--Text-color);
+    color           : var(--Text-color);
 }
 
-section.virtual-job{
-    padding: 30px;
+section.virtual-job {
+    padding         : 30px;
     background-color: #460096;
-    color: var(--Text-color);
+    color           : var(--Text-color);
 }
-section.virtual-job .container-fluid{
-    display: flex;
+
+section.virtual-job .container-fluid {
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
-section.virtual-job .container-fluid .vt-content{
-    width:70%;
-    display: flex;
+
+section.virtual-job .container-fluid .vt-content {
+    width          : 70%;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items    : center;
+    flex-direction : column;
 
 }
-section.virtual-job .container-fluid .vt-content h2.vt-title{
+
+section.virtual-job .container-fluid .vt-content h2.vt-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size : 2.5rem;
 }
-section.virtual-job .container-fluid .vt-content p{
+
+section.virtual-job .container-fluid .vt-content p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size : 1.2rem;
 }
+
 section.virtual-job .container-fluid .vt-content .vt-btn {
     margin-top: 20px;
 }
-section.virtual-job .container-fluid .vt-content .vt-btn a{
-    text-decoration: none;
+
+section.virtual-job .container-fluid .vt-content .vt-btn a {
+    text-decoration : none;
     background-color: var(--carbor-color);
-    color: var(--Text-color);
-    padding: 10px;
-    font-size: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 7px;
+    color           : var(--Text-color);
+    padding         : 10px;
+    font-size       : 16px;
+    padding-left    : 30px;
+    padding-right   : 30px;
+    border-radius   : 7px;
 }
-section.virtual-job .container-fluid .vt-content .vt-btn a:hover{
-    text-decoration: none;
+
+section.virtual-job .container-fluid .vt-content .vt-btn a:hover {
+    text-decoration : none;
     background-color: transparent;
-    border: 2px solid var(--carbor-color);
+    border          : 2px solid var(--carbor-color);
 }

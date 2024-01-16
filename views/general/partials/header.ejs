@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta content="Bitpluse" name="description">
     <meta content="Alphatech Multimedia Technologies" name="author">
 
@@ -33,7 +34,9 @@
     <link rel="stylesheet" href="home/css/main.min.css">
     <link rel="stylesheet" href="home/css/modal.css">
     <link rel="stylesheet" href="home/css/responsive.css">
-    <title><%= title %></title>
+    <title>
+        <%= title %>
+    </title>
 
 
     <style>
@@ -41,13 +44,18 @@
             overflow-x: hidden !important;
         }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="nav">
         <div class="header-container">
-            <div class="header-logo"><a href="/"><img src="/image/logo/Bitpluse-Logo.png" alt="" width="50" height="50"></a></div>
-            <div class="header-menu">
-                <ul>
+            <div class="header-logo"><a href="/"><img src="/image/logo/Bitpluse-Logo.png" alt="" width="50"height="50"></a></div>
+
+              <div class="humber d-lg-none"  data-bs-toggle="offcanvas" data-bs-target="#offcanvaStart" aria-controls="offcanvaStart"><i class="fa-solid fa-bars"></i></div>   
+
+              <div class="header-menu">
+                <div class="menu">
+                  <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/marketplace">Market Place</a></li>
                     <li><a href="/job">Job's</a></li>
@@ -56,11 +64,22 @@
                     <li><a href="/verify-pin">Verify</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/about-us">About Us</a></li>
-                </ul>
-            </div>
-            <div class="auth-btn">
-                <a class="login" href="/auth/sign-in">Login</a>
-                <a class="reg"  href="/auth/sign-up">Register</a>
-            </div>
+                  </ul>
+                </div>
+            
+                <div class="auth-btn">
+                  <a class="login" href="/auth/sign-in">Login</a>
+                  <a class="reg" href="/auth/sign-up">Register</a>
+                </div>
+              </div>
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvaStart" aria-labelledby="offcanvaStart">
+                <div class="offcanvas-header">
+                   <div class="header-logo"><a href="/"><img src="/image/logo/Bitpluse-Logo.png" alt="" width="50"height="50"></a></div>
+                  <span data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="offcanvas-body"></div>
+              </div>
+
         </div>
     </header>
