@@ -11,7 +11,7 @@
 
 
 /* Styles for Mobile screens (300px to 700px) */
-@media only screen and (min-width: 300px) and (max-width: 700px) {
+@media only screen and (min-width: 300px) and (max-width: 749px) {
 
     header.nav {
         padding-left  : 15px;
@@ -37,7 +37,13 @@
         cursor        : pointer;
     }
 
-
+    body.reg{
+        
+        background-size: cover; 
+        width: auto;
+        height: 100vh;
+        overflow: hidden;
+      }
 
 
     header.nav .header-container .header-menu {
@@ -248,9 +254,18 @@
         padding-right: 10px !important;
         padding-top  : 20px !important;
     }
-
     section.verify .container-fluid .verify-pin {
         width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section.verify .container-fluid .verify-pin .alert .status span {
+        font-size: 15px;
+    }
+    section.verify .container-fluid .verify-pin form .form-group span.sub {
+        font-size: 15px;
     }
 
     .card {
@@ -547,29 +562,122 @@
         padding-right:10px ;
         
     }
+   
+    section.why-you-choose-us .container-fluid .row .col-sm-6 .choose img{
+       width: 100%;
+       height: 50%;
+    }
+    .post{
+        padding: 10px;
+    }
+    .post .container-fluid{
+        padding: 0px;
+       
+    }
+    .post .container-fluid .card{
+        width:100%;
+    }
+    .post .container-fluid .card  .card-body{
+        padding: 0px;
+        padding-top: 10px;
+      
+    }
+    .post .container-fluid .card  .card-body h5.card-title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .post .container-fluid .card .card-body .card-text{
+        margin-top: 10px;
+        padding: 13px;
+        font-size: 15.6px;
+    }
+    .post .container-fluid .card .card-footer{
+        gap: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    
+    }
+    .post .container-fluid .card .card-footer a{
+        font-size: 20px;
+      }
+
+      section.pages .container-fluid .page-title.post {
+        width: 100%;
+        gap: 7px;
+    }
+    section.pages .container-fluid .page-title h2 {
+        font-size: 23px;
+    }
+    section.pages .container-fluid .page-title.post .card-footer {
+        gap: 30px;
+    }
+    section.pages .container-fluid .page-title.post .card-footer .time {
+        font-size: 14px;
+    }
+    section.pages .container-fluid .page-title.post .card-footer .name {
+        font-size: 14px;
+    }
+
+    section.contact{
+        padding: 10px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    section.contact .container-fluid{
+        padding: 0px;
+    }
+    section.contact .container-fluid .card{
+        width:100% !important;
+        
+    }
+    section.faqs{
+        padding: 10px;
+    }
+    section.faqs .container-fluid{
+        padding: 0px;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+    section.faqs .container-fluid .accordion{
+        width:100%;
+    }
+    section.faqs .container-fluid .accordion .accordion-item .accordion-body{
+        font-size: 17px;
+    }
+    section.faqs .container-fluid .accordion .accordion-item .accordion-header .accordion-button{
+        font-size: 17px;
+        
+        padding: 20px;
+    }
 
 
+    
+    section.about-us{
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+    section.about-us .container-fluid .row .col .head-text h3 {
+        font-size: 2rem;
 
+    }
+
+    section.about-us .container-fluid .row {
+        flex-direction: column;
+    }
+
+    section.about-us .container-fluid .row .col {
+        width: 100% !important;
+    }
+
+    section.about-us .container-fluid .row .col p {
+        font-size: 15px;
+    }
+    section.about-us .container-fluid .row .col .head-image img{
+        height: auto;
+    }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -692,7 +800,11 @@
         margin-top   : 30px;
         margin-bottom: 40px;
     }
-
+    section.why-you-choose-us .container-fluid .row .col-sm-6 .choose img{
+        width: 100%;
+        height: 50%;
+     }
+ 
     section.hero-part2 .container-fluid .heading h2 {
         font-size: 2.2rem;
         width    : 90% !important;
@@ -768,9 +880,7 @@
     }
 
     .card {
-        width: 48% !important;
-
-
+        width: 100% !important;
     }
 
     section.job {
@@ -920,7 +1030,76 @@
         display: block !important;
     }
 
+    .post{
+        padding: 10px;
+    }
+    .post .container-fluid{
+        padding: 0px;
+        width: 100%;
+       
+    }
+    .post .container-fluid .card{
+        width:100% !important;
+    }
+    .post .container-fluid .card  .card-body{
+        padding: 0px;
+        padding-top: 10px;
+      
+    }
+    .post .container-fluid .card  .card-body h5.card-title{
+        font-size: 25px !important;
+        text-align: center;
+    }
+    .post .container-fluid .card .card-body .card-text{
+        margin-top: 10px;
+        padding: 13px;
+        font-size: 15.6px;
+    }
+    .post .container-fluid .card .card-footer{
+        gap: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    
+    }
+    .post .container-fluid .card .card-footer a{
+        font-size: 20px;
+      }
 
+      section.pages .container-fluid .page-title.post {
+        width: 100%;
+        gap: 7px;
+    }
+    section.pages .container-fluid .page-title h2 {
+        font-size: 23px;
+    }
+    section.pages .container-fluid .page-title.post .card-footer {
+        gap: 30px;
+    }
+    section.pages .container-fluid .page-title.post .card-footer .time {
+        font-size: 14px;
+    }
+    section.pages .container-fluid .page-title.post .card-footer .name {
+        font-size: 14px;
+    }
 
+    section.faqs{
+        padding: 15px;
+    }
+    section.faqs .container-fluid{
+        padding: 0px;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+    section.faqs .container-fluid .accordion{
+        width:100%;
+    }
+    section.faqs .container-fluid .accordion .accordion-item .accordion-body{
+        font-size: 19px;
+    }
+    section.faqs .container-fluid .accordion .accordion-item .accordion-header .accordion-button{
+        font-size: 19px;
+        padding: 20px;
+    }
 
 }

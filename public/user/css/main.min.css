@@ -1021,9 +1021,323 @@
     font-weight        : 500;
 }
 
+.virtual{
+    padding: 7px;
+}
+.virtual .virtual-container{
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
+    border-radius: 7px;
+    padding         : 7px;
+    width: 95%;
+}
+.virtual .virtual-container h3.virtual-head{
+    margin-top: 0px;
+    font-size: 13px;
+    color: #490355;
+}
+
+
+
+.daily-task{
+    padding: 7px;
+}
+.daily-task .task-container{
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0px rgba(159, 3, 180, 0.123), 1px 1px 4px 0px rgba(190, 2, 190, 0.13) inset;
+    border-radius: 7px;
+    padding         : 7px;
+    width: auto;
+    height: auto;
+    padding-bottom: 15px;
+}
+.daily-task .task-container .task-head{
+    margin-top: 0px;
+    font-size: 18px;
+    color: #490355;
+    font-weight: 600;
+}
+.daily-task .task-container .task-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    gap: 15px;
+}
+.daily-task .task-container .task-body .task-content{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    color: #350D73;
+}
+.daily-task .task-container .task-body .task-content .tsk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.daily-task .task-container .task-body .task-content .tsk span.fak{
+    font-size: 22px;
+    background-color: #3e0d8807;
+    color: #350D73;
+    padding: 9px;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    border-radius: 9999px;
+}
+.daily-task .task-container .task-body .task-content .tsk .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.daily-task .task-container .task-body .task-content .tsk .info h4{
+    font-size: 15px;
+    color: #4b0155;
+}
+.daily-task .task-container .task-body .task-content .tsk .info span.time{
+    color: #ad96ac;
+    font-size: 13px;
+}
+
+.daily-task .task-container .task-body .task-content .tsk .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.daily-task .task-container .task-body .task-content .tsk .info h4{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.daily-task .task-container .task-body .task-content a{
+    text-decoration: none;
+    background-color: #36027a;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: #fff;
+}
+.daily-task .task-container .task-body .task-content.social-task{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+    color: #350D73;
+}
+.daily-task .task-container .task-body .task-content.social-task .social-head{
+ width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.daily-task .task-container .task-body .task-content.social-task .social-head .tsk .info span.time{
+    font-size: 12px;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-head .tsk .info h4{
+    font-size: 14px;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-head .tsk span.fak{
+    font-size: 30px;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-link {
+    width:100%;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-link form .form-control{
+    width:100%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.171), 1px 1px 4px 0px rgba(184, 12, 252, 0.185) inset;
+    margin-top: 2px;
+    background-color: #360d7311;
+    overflow: hidden;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-link form .form-control input{
+    width:100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    text-align: left;
+    font-size: 16px;
+    color: #360d7388;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-link form{
+    margin-top: 15px;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-link form span{
+    font-size: 16px;
+    font-weight: 600;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .social-link form .form-control button{
+    background-color: #36027a;
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 20%;
+    color: #fff;
+    font-size: 15px;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .details-title{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #31047917;
+    padding: 7px;
+    width:auto;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .details-title.note{
+    text-align: left;
+    font-size: 11.5px;
+    font-weight: 600;
+    background-color: #fc00000c;
+    padding: 7px;
+    width:auto;
+    color: #ff0000;
+    display: flex;
+   }
+.daily-task .task-container .task-body .task-content.social-task .task-details .Description{
+    font-size: 11.7px;
+    text-align: left;
+    width: 100%;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .proof{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+    margin-top: 10px;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form{
+    width:100%;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form .form-conrol input{
+    width:100%;
+    border: none;
+    outline: none;
+    padding: 9px;
+    text-align: left;
+    font-size: 12px;
+    color: #360d7388;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.171), 1px 1px 4px 0px rgba(184, 12, 252, 0.185) inset;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form .form-conrol input:focus{
+    border: 2px solid #360d7375;
+    outline: none;
+    box-shadow: none;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form .form-conrol{
+    margin-bottom: 10px;
+    width: 100%;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form .form-conrol label{
+    width:auto;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.171), 1px 1px 4px 0px rgba(184, 12, 252, 0.185) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #360d73b2;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form .form-conrol label span{
+   padding-right: 5px;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form .task-btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+   }
+   .daily-task .task-container .task-body .task-content.social-task .task-details .proof form .task-btn button{
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    border-radius: 7px;
+    background-color: #6014d1;
+    color: #fff;
+    margin-top: 20px;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .proof form #show-file{
+    font-size: 12px;
+    padding-top: 5px;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .virtual-post{
+    width:100%;
+    
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .virtual-post form{
+    margin-top: 9px;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .virtual-post form .form-control span{
+    font-size: 13px;
+    font-weight: 600;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .virtual-post form .form-control textarea{
+    width:100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.171), 1px 1px 4px 0px rgba(184, 12, 252, 0.185) inset;
+    padding: 7px;
+    font-size: 14px;
+    color: #360d73d2;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .virtual-post form .form-control textarea:disabled{
+    background-color: #360d7311;
+    color: #350D73;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .virtual-post form button{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #350D73;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.daily-task .task-container .task-body .task-content.social-task .task-details .virtual-post a{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+
+
 .chart {
     padding: 10px;
-    margin-bottom: 70px;
 }
 
 .chart .chart-container {

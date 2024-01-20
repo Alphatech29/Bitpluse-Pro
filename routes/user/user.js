@@ -12,7 +12,6 @@ const { userProductVendorGet} = require("../../controllers/user/productVendor");
 const { userProductListGet} = require("../../controllers/user/productlist");
 const { userSellerGet} = require("../../controllers/user/sellerPortal");
 const { userAdduserGet} = require("../../controllers/user/add-new-user");
-const { userLeaderboardGet} = require("../../controllers/user/leaderBoard");
 const { userReferralGet} = require("../../controllers/user/referral");
 const { userProfileGet, userSecurityGet, userBlockGet} = require("../../controllers/user/settings");
 const userRoute = require("express").Router();
@@ -65,9 +64,6 @@ userRoute.route("/market/shop/affiliate").get(userSellerGet);
 
 //ADD NEW USER
 userRoute.route("/p2p").get(userAdduserGet);
-
-//LEADERBOARD
-userRoute.route("/leaderboard").get(userLeaderboardGet);
 
 //WEBVIEW BLOCK
 userRoute.route("/*").get(userBlockGet);

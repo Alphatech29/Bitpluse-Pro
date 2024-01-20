@@ -1,25 +1,134 @@
 <%-include("../../partials/header2")%>
 
+<div class="dash-act">
+    <div class="dash-act-container">
+        <div class="dash-act-body">
+            <div class="dash-act-content">
+                <h4>Activitise Balance</h4>
+                <h2>$ 20,000.00</h2>
+                <span>Updated few mins ago</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sub-holder">
+    <div class="sub-holder-container">
+    <div class="sub-card-holder">
+        <div class="sub-card-name" style="--sub-card:#09c7f71a;">
+            <div class="sub-icon" style="--icon:#09c7f72d;"><i class="fa-solid fa-comment"></i></i></div>
+            <div class="sub-name">
+                <h4>2,000</h4>
+            <span>Social Task Earnigs</span>
+            </div>
+        </div>
+        <div class="sub-card-name" style="--sub-card:#f7e7091a;">
+            <div class="sub-icon" style="--icon:#f7e70934;"><i class="fa-solid fa-gift"></i></i></div>
+            <div class="sub-name">
+            <h4>1,200</h4>
+            <span>Ads Earnings</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="daily-task" style="margin-bottom: 90px;">
+    <div class="task-container">
+        <div class="task-head">Daily Task</div>
+        <div class="task-body">
+            <div class="task-content">
+                <div class="tsk">
+                    <span class="fak"><i class="fa-solid fa-bullhorn"></i></span>
+                    <div class="info">
+                        <h4>Sponsore Ads</h4>
+                        <span class="time">18th-Jan | 04:29PM</span>
+                    </div>
+                </div>
+                <a href="">Share Now</a>
+            </div>
+            <div class="task-content">
+                <div class="tsk" id="socialTask">
+                    <span class="fak"><i class="fa-solid fa-gift"></i></span>
+                    <div class="info">
+                        <h4>Social/Tiktok Task</h4>
+                        <span class="time">18th-Jan | 04:29PM</span>
+                    </div>
+                </div>
+                <a href="">Do Now</a>
+            </div>
+
+            <div class="task-content social-task" id="Task">
+                <div class="social-head">
+                    <div class="tsk" id="socialTask">
+                        <span class="fak"><i class="fa-solid fa-gift"></i></span>
+                        <div class="info">
+                            <span class="time">18th-Jan | 04:29PM</span>
+                            <h4>Social/Tiktok Task</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-link">
+                    <form action="">
+                        <span>Task Link</span>
+                        <div class="form-control">
+                            <input type="text" value="https://tiktok.com/bitpluse" disabled>
+                            <button>Copy</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="task-details">
+                    <div class="details-title">Kindly adhere to the step-by-step instructions outlined below to complete your assigned task.</div>
+                    <div class="Description">
+                        <p><b>Step 1:</b> Access the provided Task Link using your Tiktok Mobile App or web browser for the assigned action.</p>
+                        <p><b>Step 2:</b>Follow the link to a Tiktok page; your task is to like and follow it.</p>
+                        <p><b>Step 3:</b>Click the Like/Follow button on the Tiktok page; do not unfollow after following. Your cooperation is appreciated.</p>
+                        <p><b>Step 4:</b>Capture a screenshot of your liked/followed page. Upload it with your Tiktok username on the Proof of Work Form.</p>
+                    </div>
+                    <div class="details-title note"><b>Note:</b> Avoid unliking or unfollowing the TikTok page post-like/follow; such actions may result in deducted earnings or payment issues.</div>
+                    <div class="proof">
+                        <form action="">
+                            <div class="form-conrol">
+                                <input type="text" name="text" placeholder="Please share task-performing social handle for verification." required>
+                            </div>
+
+                            <div class="form-conrol">
+                                <input type="file" id="upload" accept=".jpg, .jpeg, .png" multiple required>
+                                <label for="upload"><span><i class="fa-solid fa-cloud-arrow-down"></i></span>Upload Proof</label>
+                                <div id="show-file"></div>
+                            </div>
+
+                            <div class="task-btn">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+   document.getElementById('upload').addEventListener('change', handleFileSelect);
+
+function handleFileSelect(event) {
+    const files = event.target.files;
+    const fileList = document.getElementById('show-file');
+
+    fileList.innerHTML = ""; // Clear previous entries
+
+    for (let i = 0; i < files.length; i++) {
+        const listItem = document.createElement('div');
+        listItem.textContent = `${i + 1}. ${files[i].name}`;
+        fileList.appendChild(listItem);
+    }
+}
+</script>
 
 
 
-    <div class="task12">
-       <div class="adscard">
-        <div class="thumb23">
-            <img  class="thumb" src="/image/AVM-App-RC-X-1.png" alt="thumb">
-        </div>
-        <div class="adstitle">ADVERT POST FOR 23RD AUGUST 2023.</div>
-        <div class="adscontent">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam eaque odit suscipit aliquid placeat quas. Enim, quas sed mollitia unde ipsam numquam. Animi quas eaque odio doloremque quasi voluptatem molestiae, corrupti architecto, ullam totam provident sapiente aut quo laudantium.</p><span><a href="#" >Read More...</a></span>
-        </div>
-        <div class="adsbutton">
-            <button><i class="ri-whatsapp-fill" style="--tk: #49c95a;"></i></button>
-            <button> <i class="ri-twitter-x-fill" style="--tk: #5e5e5e;"></i></button>
-            <button> <i class="ri-facebook-circle-fill" style="--tk: #1317eb;"></i></button>
-            
-        </div>
-       </div>
-       </div>
 
 
 <%-include("../../partials/sidebar")%>

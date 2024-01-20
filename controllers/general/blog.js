@@ -7,3 +7,13 @@ exports.blogPageGet = asyncHandler(async (req, res, next) => {
     })
 });
 
+
+
+
+
+exports.singlePageGet = asyncHandler(async (req, res, next) => {
+    
+    return res.render("general/pages/blog/singleblog", {
+        title: "Single"
+    })
+});

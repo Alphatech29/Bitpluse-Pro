@@ -3,8 +3,9 @@ const { merchantPageGet } = require("../../controllers/general/merchant");
 const { verifyPageGet } = require("../../controllers/general/verify");
 const { shoppingPageGet , jobPageGet } = require("../../controllers/general/shopping");
 const { earnersPageGet } = require("../../controllers/general/topearners");
-const { blogPageGet } = require("../../controllers/general/blog");
+const { blogPageGet , singlePageGet } = require("../../controllers/general/blog");
 const { contactPageGet } = require("../../controllers/general/contact");
+const { aboutPageGet , faqPageGet } = require("../../controllers/general/aboutUs");
 
 
 
@@ -34,8 +35,17 @@ generalRoute.route("/verify-pin").get(verifyPageGet)
 //BLOGPAGE
 generalRoute.route("/blog").get(blogPageGet)
 
+//SINGLEBLOGPAGE
+generalRoute.route("/post").get(singlePageGet)
+
 //JOBPAGE
 generalRoute.route("/job").get(jobPageGet)
+
+//ABOUTUSPAGE
+generalRoute.route("/about-us").get(aboutPageGet)
+
+//FAQSPAGE
+generalRoute.route("/faqs").get(faqPageGet)
 
 //CONTACTPAGE
 generalRoute.route("/contact-us").get(contactPageGet)

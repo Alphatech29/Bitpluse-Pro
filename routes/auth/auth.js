@@ -22,7 +22,7 @@ authRoute.route("/sign-in").get(loginPageGet)
 authRoute.route("/reset-password").get(resetpasswordPageGet)
 
 //CHANGEPASSWORKPAGE
-authRoute.route("/change-password").get(changepasswordPageGet)
+authRoute.route("/reset").get(changepasswordPageGet)
 
 
 
