@@ -757,9 +757,96 @@ section.shop .container-fluid .row .card .card-footer span {
     text-align: center;
 }
 
-
+.modal .modal-dialog .modal-content .modal-header Span {
+    font-size : 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+.modal .modal-dialog .modal-content .resell-tips h4{
+    font-size : 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    background-color:#ec009146;
+    padding: 7px;
+}
 .modal .modal-dialog .modal-content .product-discrib {
-    padding-top: 20px;
+    padding-top: 25px;
+}
+.modal .modal-dialog .modal-content .modal-body .product-discrib p.info{
+    font-size : 19px;
+    text-align: center;
+}
+.modal .modal-dialog .modal-content .modal-body .product-footer.plh{
+    font-size : 15px;
+    text-align: center;
+    background-color:#ec009146;
+}
+.modal .modal-dialog .modal-content .modal-body .resell-gen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.modal .modal-dialog .modal-content .modal-body .resell-gen button{
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: var(--red-gradient, linear-gradient(96deg, rgb(233, 15, 106) 10.59%, #a902b8 70.48%));
+    color: #fff;
+}
+.modal .modal-dialog .modal-content .modal-body form .form-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.493), 1px 1px 4px 0px rgba(204, 0, 204, 0.438)inset;
+    margin-top: 15px;
+ 
+}
+.modal .modal-dialog .modal-content .modal-body form .form-control input{
+    width: 85%;
+    border: none;
+    outline: none;
+    background-color: #b300b311;
+    color: #fff;
+    padding: 10px;
+    
+}
+.modal .modal-dialog .modal-content .modal-body form .form-control span{
+    background: var(--red-gradient, linear-gradient(96deg, rgb(233, 15, 106) 10.59%, #a902b8 70.48%));
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 15%;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.modal .modal-dialog .modal-content .modal-body .resell-gen button:hover{
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: var(--red-gradient, linear-gradient(96deg,  #a902b8 10.59% , rgb(233, 15, 106) 70.48%));
+    color: #fff;
+}
+.modal .modal-dialog .modal-content .modal-footer.mf h4{
+    background-color: #f804046c;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px;
 }
 
 .modal .modal-dialog .modal-content .product-discrib h3 {

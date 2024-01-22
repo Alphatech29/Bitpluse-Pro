@@ -59,11 +59,11 @@ getElementByIdAll("moreDetailsLink").forEach((link) => {
   link.addEventListener("click", openCustomModal);
 });
 
+
+//THIS CODE IS POPULATE STATE IN CHECKOUT  
 document.addEventListener("DOMContentLoaded", function () {
-  // Call the function to populate the states initially
   populateStates();
 
-  // Add an event listener to the "delivery-state" dropdown
   const stateSelect = document.getElementById("delivery-state");
   const lgaSelect = document.getElementById("delivery-lga");
 
@@ -1032,7 +1032,6 @@ function updateStars() {
 }
 
 //This code work on job modal
-// JavaScript to open the modal when clicking on any card with the class 'open-job-info'
 document.querySelectorAll(".open-job-info").forEach(function (cardTitle) {
   cardTitle.addEventListener("click", function () {
     document.getElementById("Job-info").style.display = "block";
@@ -1102,3 +1101,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Updated function with a new name
+function openResellModal(elementId) {
+  if (typeof bootstrap !== "undefined") {
+    const modalElement = document.getElementById(elementId);
+    if (modalElement) {
+      new bootstrap.Modal(modalElement).show();
+    } else {
+      console.error(`Element with ID "${elementId}" not found.`);
+    }
+  } else {
+    console.error("Framework is not loaded. Make sure to include the file.");
+  }
+}
+
+// Add click event listener to the element with ID "resell" and call openResellModal with "resell" as the parameter
+document.getElementById("resell").addEventListener("click", function () {
+  openResellModal("openResell");
+});

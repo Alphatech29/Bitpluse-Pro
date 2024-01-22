@@ -677,7 +677,51 @@
         height: auto;
     }
 
+    .modal .modal-dialog .modal-content .modal-header h5.modal-title {
+        font-size : 20px;
+    }
+    .modal .modal-dialog .modal-content .resell-tips h4{
+        font-size : 15px;
+    }
+    .modal .modal-dialog .modal-content .modal-body .product-discrib p.info{
+        font-size : 15px;
+    }
+    .modal .modal-dialog .modal-content .modal-body .product-footer.plh{
+        font-size : 14px;
+        padding: 7px;
+    }
+    .modal .modal-dialog .modal-content .modal-body .resell-gen button{
+        font-size: 15px;
+    }
+    .modal .modal-dialog .modal-content .modal-body form .form-control input{
+        width: 75%;  
+    }
+    .modal .modal-dialog .modal-content .modal-body form .form-control span{
+        font-size: 15px;
+        width: 25%;
+    }
+    .modal .modal-dialog .modal-content .modal-footer.mf h4{
+        background-color: #f8040449;
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

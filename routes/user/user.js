@@ -1,6 +1,7 @@
 
 const { userDashboardGet} = require("../../controllers/user/dashboard");
 const { userStakeholderGet} = require("../../controllers/user/stakeholder");
+const { userMerchantGet} = require("../../controllers/user/merchant");
 const { userWithdrawGet} = require("../../controllers/user/withdraw");
 const { userJobGet} = require("../../controllers/user/job");
 const { userShopGet} = require("../../controllers/user/shop");
@@ -20,7 +21,10 @@ const userRoute = require("express").Router();
 //DASHBOARD
 userRoute.route("/dashboard").get(userDashboardGet);
 
-//STAKEHOLDWE
+//MERCHANTDASHBOARD
+userRoute.route("/merchant/dashboard").get(userMerchantGet);
+
+//STAKEHOLDER
 userRoute.route("/stakeholder").get(userStakeholderGet);
 
 //SETTINGS

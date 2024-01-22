@@ -18,7 +18,7 @@ body {
   
 
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -197,6 +197,142 @@ footer {
     font-size  : 14px;
     font-weight: 700;
 }
+
+
+.bit-vtu{
+    padding: 10px;
+}
+.bit-vtu .vtu-container{
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 7px;
+}
+.bit-vtu .vtu-container .VtuTab {
+    margin-top     : 7px;
+    height         : 25px;
+    padding        : 5px;
+    background     : #F3F3F3;
+    box-shadow     : 0px 0.5px 4px #350D73;
+    border-radius  : 7px;
+    justify-content: space-between;
+    align-items    : center;
+    display        : flex;
+}
+.bit-vtu .vtu-container .vtu-head{
+    font-size: 11px;
+    padding-top: 10px;
+    color: #350D73;
+    font-weight: 600;
+}
+.bit-vtu .vtu-container .vtu-body{
+    padding-top: 20px;
+    display: none;
+}
+.bit-vtu .vtu-container .vtu-body.active{
+    padding-top: 20px;
+    display: block;
+}
+.bit-vtu .vtu-container .vtu-body form{
+    gap: 15px;
+    flex-direction: column;
+    display: flex;
+}
+.bit-vtu .vtu-container .vtu-body form .form-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.bit-vtu .vtu-container .vtu-body form .form-control:focus-within{
+    border: 1px solid #350D73;
+}
+.bit-vtu .vtu-container .vtu-body form .form-control span{
+    width: 30%;
+    background-color: #350D73;
+    color: #fff;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.bit-vtu .vtu-container .vtu-body form .form-control input{
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 8px;
+    font-size: 12px;
+    color: #350D73;
+}
+.bit-vtu .vtu-container .vtu-body form .form-control select{
+    width:100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 10px;
+    font-size: 12px;
+    color: #350D73;
+    appearance: none;
+}
+.bit-vtu .vtu-container .vtu-body form .form-control select option{
+    background-color: #350D73;
+    color: #fff;
+    appearance: none;
+}
+.bit-vtu .vtu-container .vtu-body form .vtu-network{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    padding-top: 7px;
+    
+}
+.bit-vtu .vtu-container .vtu-body form .vtu-network .form-check input{
+    display: none;
+}
+.bit-vtu .vtu-container .vtu-body form .vtu-network .form-check label.form-check-label{
+    overflow: hidden;
+    cursor: pointer;
+}
+.bit-vtu .vtu-container .vtu-body form .vtu-network .form-check label.form-check-label img{
+    object-fit: fill;
+    height: 50;
+    width: 50;
+}
+.bit-vtu .vtu-container .vtu-body form .vtu-network .form-check input.form-check-input:checked + .form-check-label {
+    border: 2px solid #350D73;
+    display: inline-block;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px 0px rgba(40, 1, 90, 0.534), 1px 1px 4px 0px rgba(53, 1, 112, 0.349) inset;
+}
+
+.bit-vtu .vtu-container .vtu-body form .vtu-btn{
+    display: flex;
+    justify-content: end;
+}
+.bit-vtu .vtu-container .vtu-body form .vtu-btn button{
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    appearance: none;
+    font-size: 15px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: var(--red-gradient, linear-gradient(96deg, rgb(73, 1, 116) 10.59%, #a902b8 70.48%));
+    color: #fff;
+    cursor: pointer;
+}
+
+
 
 .sky_vtutab {
     padding        : 10px;
@@ -840,7 +976,6 @@ h4.titp{
 
 .shop{
     padding: 10px;
-    margin-top: 68px;
     margin-bottom: 70px;
 }
 .shop .shop-container{
@@ -1000,7 +1135,6 @@ h4.titp{
 
 .atm-card{
     padding: 10px;
-    padding-top: 80px;
 }
 .atm-card .atm-card-container{
     background: linear-gradient(102deg, #390085 11.05%, rgb(70, 1, 116) 33.7%, rgba(150, 0, 188, 0.99) 57%, rgba(92, 0, 167, 0.99) 80.92%);
@@ -1073,115 +1207,121 @@ h4.titp{
 ::placeholder{
     color: #350D73;
 }
-.drawalpage{
+.converter{
     padding: 10px;
 }
-.page34 {
-    border-radius : 8px;
-    background    : #FFF;
-    overflow      : hidden;
-    display       : flex;
-    align-items   : center;
-    justify-content: center;
+.converter .converter-container{
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    background: #FFF;
     padding: 10px;
-    flex-direction: column;
-    color: #350D73;
-    padding-bottom: 50px;
-    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
-}
-
-.select-field2 {
-    appearance        : none;
-    -webkit-appearance: none;
-    background        : #ffffff;
-    width: 350px;
-    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
-    border-radius     : 7px;
-    padding           : 12px;
-    color             : #350D73;
-
-}
-
-.select-field2::after {
-    content       : "\25BC";
-    font-size     : 14px;
-    color         : #350D73;
-    position      : absolute;
-    top           : 50%;
-    right         : 10px;
-    transform     : translateY(-50%);
-    pointer-events: none;
-}
-
-.select-field2 option[selected] {
-    font-weight: bold;
-}
-
-.select-field2 option {
-    font-size: 13px;
-    line-height: 20px;
-    padding  : 4px;
-}
-
-.select-field2 option:hover {
-    background-color: #350D73;
-}
-
-.select-field2:focus {
-    border-color: #350D73;
-    box-shadow  : 1px;
-    outline     : none;
-}
-.numbbal{
-    width: 350px;
-    color: #050457;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    gap: 5px;
-}
-.numbbal span{
-    font-size: 12px;
-    font-weight: 500;
+    border-radius: 8px;
     
 }
-.Inputvtu input {
-  width: 100%;
+.converter .converter-container .convert-head{
+   font-size: 14px;
+   font-weight: 600;
+   color: #350D73;
+   padding-bottom: 15px;
 }
-.submit {
-    color: #FFF;
-    margin-top     : 50px;
-    display        : flex;
-    width          : 267px;
-    padding        : 9px 112px 9px 101px;
-    align-items    : center;
-    justify-content: center;
-    border-radius  : 7px;
-    background     : #350D73;
+.converter .converter-container .convert-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ 
+ .converter .converter-container .convert-content .form-control select{
+    position: relative;
+    width:100%;
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 14.5px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    background-color: transparent;
+    color: #350D73;
+    border-radius: 7px;
+   
+ }
+ .converter .converter-container .convert-content .form-control select:focus{
+ border: 1px solid #350D73;
+ box-shadow: none;
+ border-radius: 7px;
 }
 
-.inputpin{
-  
-    width: 330px;
-    margin-top: 20px;
-    padding: 1px;
-    background: #ffffff;
+ .converter .converter-container .convert-content .form-control input{
+    width:100%;
+    padding: 10px;
+    border: none;
+    outline: none;
     box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
-    border-radius: 7px;
+    font-size: 13px;
+    margin-bottom: 10px;
+ }
+ .converter .converter-container .convert-content .form-control input:focus{
+    border: 1px solid #350D73;
+    box-shadow: none;
+   
+ }
+ .converter .converter-container .convert-content .form-control span{
+    font-size: 11px;
     color: #350D73;
-}
-.inputpin input{
-    width: 330px;
-    color: #350D73;
+ }
+ .place{
+    padding: 10px;
+ }
+ .place .place-container{
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     background: #FFF;
+    padding: 7px;
+    border-radius: 8px;
+ }
+ .place .place-container .place-head {
+    font-size: 14px;
+    font-weight: 600;
+    color: #350D73;
+    padding-bottom: 15px;
+ }
+ .place .place-container form{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+ }
+ .place .place-container form .form-control input{
+    width:100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    font-size: 13px;
+ }
+ .place .place-container form .form-control input:focus{
+    border: 1px solid #350D73;
+    box-shadow: none;
+ }
+ .place .place-container form .place-btn{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+ }
+ .place .place-container form .place-btn button{
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    appearance: none;
+    font-size: 15px;
     border-radius: 7px;
     border: none;
-    padding: 10px;
     outline: none;
+    background: var(--red-gradient, linear-gradient(96deg, rgb(73, 1, 116) 10.59%, #a902b8 70.48%));
+    color: #fff;
+    cursor: pointer;
 }
-.inputpin input:focus{
-    outline: 1.5px solid  #31007d;
-}
+
+
+
 .withhistroy{
     display: flex;
     justify-content: center;

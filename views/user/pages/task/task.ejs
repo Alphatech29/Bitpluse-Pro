@@ -32,7 +32,7 @@
 </div>
 </div>
 
-<div class="daily-task" style="margin-bottom: 90px;">
+<div class="daily-task" style="margin-bottom: 7px;">
     <div class="task-container">
         <div class="task-head">Daily Task</div>
         <div class="task-body">
@@ -110,23 +110,121 @@
 </div>
 
 
-<script>
-   document.getElementById('upload').addEventListener('change', handleFileSelect);
-
-function handleFileSelect(event) {
-    const files = event.target.files;
-    const fileList = document.getElementById('show-file');
-
-    fileList.innerHTML = ""; // Clear previous entries
-
-    for (let i = 0; i < files.length; i++) {
-        const listItem = document.createElement('div');
-        listItem.textContent = `${i + 1}. ${files[i].name}`;
-        fileList.appendChild(listItem);
-    }
-}
-</script>
-
+<div class="dash-hist">
+    <div class="dash-container">
+      <div class="dash-head">
+        <div class="dash-head-name">Recent Transaction</div>
+        <div class="dash-head-name">View More</div>
+      </div>
+      <div class="dash-body">
+        <div class="dash-content">
+          <div class="dash-const">
+            <div class="dash-img">
+              <i class="ri-bank-fill"></i>
+            </div>
+            <div class="dash-name">
+              <h2>Withdraw to Bank</h2>
+              <span>22nd-Oct-2023 | 7:49am</span>
+            </div>
+          </div>
+          <div class="dash-status">
+            <h2>30,000</h2>
+            <span>Successful</span>
+          </div>
+        </div>
+        <div class="dash-content">
+          <div class="dash-const">
+            <div class="dash-img">
+              <ion-icon name="gift" role="img" class="md hydrated"></ion-icon>
+            </div>
+            <div class="dash-name">
+              <h2>Welcome Bonus</h2>
+              <span>22nd-Oct-2023 | 7:49am</span>
+            </div>
+          </div>
+          <div class="dash-status">
+            <h2>3,500</h2>
+            <span>Successful</span>
+          </div>
+        </div>
+        <div class="dash-content">
+            <div class="dash-const">
+              <div class="dash-img">
+                <ion-icon name="gift" role="img" class="md hydrated"></ion-icon>
+              </div>
+              <div class="dash-name">
+                <h2>Daily Login</h2>
+                <span>22nd-Oct-2023 | 7:49am</span>
+              </div>
+            </div>
+            <div class="dash-status">
+              <h2>500</h2>
+              <span>Successful</span>
+            </div>
+          </div>
+        <div class="dash-content">
+          <div class="dash-const">
+            <div class="dash-img">
+              <ion-icon name="phone-portrait" role="img" class="md hydrated"></ion-icon>
+            </div>
+            <div class="dash-name">
+              <h2>Airtime Purchase</h2>
+              <span>22nd-Oct-2023 | 7:49am</span>
+            </div>
+          </div>
+          <div class="dash-status">
+            <h2>1,500</h2>
+            <span>Successful</span>
+          </div>
+        </div>
+        <div class="dash-content">
+          <div class="dash-const">
+            <div class="dash-img">
+              <ion-icon name="gift" role="img" class="md hydrated"></ion-icon>
+            </div>
+            <div class="dash-name">
+              <h2>Sponsord Ads</h2>
+              <span>22nd-Oct-2023 | 7:49am</span>
+            </div>
+          </div>
+          <div class="dash-status">
+            <h2>$500</h2>
+            <span>Successful</span>
+          </div>
+        </div>
+        <div class="dash-content">
+            <div class="dash-const">
+              <div class="dash-img">
+                <ion-icon name="gift" role="img" class="md hydrated"></ion-icon>
+              </div>
+              <div class="dash-name">
+                <h2>Social/Tiktok Task</h2>
+                <span>22nd-Oct-2023 | 7:49am</span>
+              </div>
+            </div>
+            <div class="dash-status">
+              <h2>500</h2>
+              <span>Successful</span>
+            </div>
+          </div>
+        <div class="dash-content">
+          <div class="dash-const">
+            <div class="dash-img">
+              <ion-icon name="person-add" role="img" class="md hydrated"></ion-icon>
+            </div>
+            <div class="dash-name">
+              <h2>P2P</h2>
+              <span>22nd-Oct-2023 | 7:49am</span>
+            </div>
+          </div>
+          <div class="dash-status">
+            <h2>20,000</h2>
+            <span>Successful</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
