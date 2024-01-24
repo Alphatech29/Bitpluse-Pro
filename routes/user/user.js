@@ -3,6 +3,7 @@ const { userDashboardGet} = require("../../controllers/user/dashboard");
 const { userStakeholderGet} = require("../../controllers/user/stakeholder");
 const { userMerchantGet} = require("../../controllers/user/merchant");
 const { userWithdrawGet} = require("../../controllers/user/withdraw");
+const { userWalletGet , userNewwalletGet} = require("../../controllers/user/wallet");
 const { userJobGet} = require("../../controllers/user/job");
 const { userShopGet} = require("../../controllers/user/shop");
 const { userVtuGet} = require("../../controllers/user/vtu");
@@ -14,6 +15,7 @@ const { userProductListGet} = require("../../controllers/user/productlist");
 const { userSellerGet} = require("../../controllers/user/sellerPortal");
 const { userAdduserGet} = require("../../controllers/user/add-new-user");
 const { userReferralGet} = require("../../controllers/user/referral");
+const { userSpinGet} = require("../../controllers/user/spin&win");
 const { userContestGet} = require("../../controllers/user/contest");
 const { userCourseGet} = require("../../controllers/user/course");
 const { userProfileGet, userSecurityGet, userBlockGet} = require("../../controllers/user/settings");
@@ -35,14 +37,23 @@ userRoute.route("/setting/profile").get(userProfileGet);
 //SECURITY
 userRoute.route("/setting/security").get(userSecurityGet)
 
+//WALLET
+userRoute.route("/wallet").get(userWalletGet)
+
+//NEW WALLET
+userRoute.route("/wallet/edit").get(userNewwalletGet)
+
 //JOB DASHBOARD
 userRoute.route("/job").get(userJobGet);
 
 //WITHDRAW DASHBOARD
 userRoute.route("/withdraw").get(userWithdrawGet);
 
-//VTU DASHBOARD
+//VTU
 userRoute.route("/vtu").get(userVtuGet);
+
+//SPIN AND WIN
+userRoute.route("/spin").get(userSpinGet);
 
 //COURSE DASHBOARD
 userRoute.route("/course").get(userCourseGet);
