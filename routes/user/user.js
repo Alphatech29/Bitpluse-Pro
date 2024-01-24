@@ -14,6 +14,8 @@ const { userProductListGet} = require("../../controllers/user/productlist");
 const { userSellerGet} = require("../../controllers/user/sellerPortal");
 const { userAdduserGet} = require("../../controllers/user/add-new-user");
 const { userReferralGet} = require("../../controllers/user/referral");
+const { userContestGet} = require("../../controllers/user/contest");
+const { userCourseGet} = require("../../controllers/user/course");
 const { userProfileGet, userSecurityGet, userBlockGet} = require("../../controllers/user/settings");
 const userRoute = require("express").Router();
 
@@ -42,6 +44,9 @@ userRoute.route("/withdraw").get(userWithdrawGet);
 //VTU DASHBOARD
 userRoute.route("/vtu").get(userVtuGet);
 
+//COURSE DASHBOARD
+userRoute.route("/course").get(userCourseGet);
+
 //UPGRADE DASHBOARD
 userRoute.route("/upgrade").get(userUpgradeGet);
 
@@ -68,6 +73,9 @@ userRoute.route("/market/shop/affiliate").get(userSellerGet);
 
 //ADD NEW USER
 userRoute.route("/p2p").get(userAdduserGet);
+
+//CONTEST
+userRoute.route("/contest").get(userContestGet);
 
 //WEBVIEW BLOCK
 userRoute.route("/*").get(userBlockGet);

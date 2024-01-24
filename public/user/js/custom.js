@@ -44,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
- // main.js
-
 document.getElementById('upload').addEventListener('change', handleFileSelect);
 
 function handleFileSelect(event) {
@@ -60,3 +58,34 @@ function handleFileSelect(event) {
         fileList.appendChild(listItem);
     }
 }
+
+
+
+//THIS CODE IS TO OPEN AND CLOSE REMIT POPUP
+function openRemit() {
+  document.querySelector('.remit-fund').style.display = 'flex';
+}
+function closeRemit() {
+  document.querySelector('.remit-fund').style.display = 'none';
+}
+
+
+
+
+
+function toggleTab(tab) {
+  // Get the tab and body elements
+  const tabButtons = document.querySelectorAll('.course-tab');
+  const tabBodies = document.querySelectorAll('.content');
+
+  // Remove the 'active' class from all tab buttons and bodies
+  tabButtons.forEach(btn => btn.classList.remove('active'));
+  tabBodies.forEach(body => body.classList.remove('active'));
+
+  // Add the 'active' class to the clicked tab button and corresponding body
+  tab.classList.add('active');
+  const tabId = tab.getAttribute('data-tab');
+  const correspondingBody = document.getElementById(tabId);
+  correspondingBody.classList.add('active');
+}
+

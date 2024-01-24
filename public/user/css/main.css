@@ -6,8 +6,8 @@
 
 .dropdown-content {
     overflow        : hidden;
-    left            : 10px;
-    top             : 40px;
+    left            : 0px;
+    top             : 42px;
     padding-top     : 4px;
     padding-bottom  : 4px;
     padding-left    : 10px;
@@ -155,7 +155,7 @@
     justify-content: space-between;
     gap            : 12px;
     margin-top     : 30px;
-    max-height     : 395px;
+    max-height     : 400px;
     overflow-y     : auto;
     overflow-x     : hidden;
 }
@@ -175,11 +175,11 @@
 }
 
 .Sidebar-content button:hover {
-    color        : #350D73;
-    background   : #ffd900;
+    background   : #ff2f97;
     padding      : 9px;
     border-radius: 9px;
     width        : 80%;
+    color: #fff;
 }
 
 
@@ -384,17 +384,6 @@ list-style: none;
     background-color: #fff;
     border: 1px solid #350D73;
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .table-content {
@@ -1657,96 +1646,184 @@ input[type="file"] {
     width: 100%;
     height: auto;
     background-color: #fff;
-    margin-top: 63px;
     border-radius: 7px;
     box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     overflow: hidden;
  
 }
-.profile-frame .profile-heard {
-    width          : 100%;
-    display        : flex;
-    justify-content: center;
-    align-self     : center;
+
+.profile{
+    padding: 10px;
+    margin-bottom: 70px;
 }
-.profile-body{
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
+.profile .profile-container{
+    color: #fff;
+    border-radius: 7px;
+    background: var(--red-gradient, linear-gradient(96deg, rgb(55, 1, 126) 10.59%, #530174a8 70.48%));
+    padding: 8px;
+}
+.profile .profile-container .profile-head{
+    font-size: 18px;
+    padding: 7px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.profile .profile-container .profile-body{
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+}
+.profile .profile-container .profile-body .profile-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.profile .profile-container .profile-body .profile-content img{
+    border-radius: 20%;
+    width: 80;
+    height: 80;
+    object-fit: fill;
+}
+
+.profile .profile-container .profile-body .profile-content .profile-btn{
+    display: flex;
+    flex-direction: column;
+}
+.profile .profile-container .profile-body .profile-content .profile-btn span{
+   font-size: 10px;
+   color: #cfcfcfb4;
+   padding-top: 3px;
+}
+.profile .profile-container .profile-body .profile-content .profile-btn .sponsor-name{
+    font-size: 15px;
+    color: #ffffff;
+    padding-top: 7px;
+ }
+.profile .profile-container .profile-body .profile-content .profile-btn .file-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.profile .profile-container .profile-body .profile-content .profile-btn .file-btn .form-control input{
+    display: none;
+}
+.profile .profile-container .profile-body .profile-content .profile-btn .file-btn .form-control label{
+   background: var(--red-gradient, linear-gradient(96deg, rgb(189, 0, 94) 10.59%, #04acac 70.48%));
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   border-radius: 7px;
+   font-size: 14px;
 
 }
-.profile-body form {
-    width: 97%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 9px;
+.profile .profile-container .profile-body .profile-content .profile-btn .file-btn button{
+    background: var(--red-gradient, linear-gradient(96deg, rgb(71, 1, 163) 10.59%, #ac8d04 70.48%));
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   border-radius: 7px;
+   font-size: 14px;
+   appearance: none;
+   outline: none;
+   border: none;
+   color: #FFF;
 }
-.pro-form{
+.profile .profile-container .profile-body .profile-setup{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
+    margin-top: 35px;
+    font-size: 18px;
+    padding: 7px;
+    font-weight: 600;
+    gap: 5px;
+}
+.profile .profile-container .profile-body .profile-setup span{
+  background-color: #fff;
+  font-size: 15px;
+  padding: 7px;
+  border-radius: 50%;
+  color: #350D73;
+  margin-bottom: 5px;
+}
+.profile .profile-container .profile-body form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    gap: 10px;
+}
+.profile .profile-container .profile-body form .form-control{
+    width:100%;
+}
+.profile .profile-container .profile-body form .form-control span{
+    font-size: 12px;
+}
+.profile .profile-container .profile-body form .form-control input{
+    width:100%;
+    padding: 10px;
     border-radius: 7px;
-    overflow: hidden;
-    padding-left: 8px;
-    border-bottom: 1px #360d7311 dashed;
-   
-}
-.pro-form span{
-    color: #350D73;
-    font-size: 17px;
-    font-weight: 500;
-    width: 30%;
-}
-.pro-form input{
-    text-align: right;
-    font-size: 15px;
-    appearance: none;
-    -webkit-appearance: none;
     border: none;
     outline: none;
-    color: #350D73;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 13px;
-    border-radius: 7px;
-    pointer-events: none;
-}
-button.pro-form-btn{
+    font-size: 15px;
     appearance: none;
-    -webkit-appearance: none;
-    padding: 6px 20px 6px 20px;
-    font-size: 17px;
-    color: #fff;
-    border: 0;
-    background-color: rgba(255, 0, 0, 0.623);
-    border-radius: 7px;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.541), 1px 1px 4px 0px rgba(204, 0, 204, 0.548) inset;
+    background-color: #fff;
+}
+.profile .profile-container .profile-body form .form-control input:focus{
+    box-shadow: none;
+    border: 2px solid #09c372;
+    
+}
+.profile .profile-container .profile-body form .form-control input:disabled{
+   background-color: #fff;
+}
 
+.profile .profile-container .profile-body form .form-control select{
+    width:100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    appearance: none;
+    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.541), 1px 1px 4px 0px rgba(204, 0, 204, 0.548) inset;
+    background-color: #fff;
 }
-.pro-form-img{
-    padding-top: 20px;
-}
-.pro-form-img img{
-    background: #890196fd;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    padding: 3px;
-    width: 80px;
-    object-fit: cover;
-    height: 80px;
-    box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
-}
-.profile-heard span{
-    padding-top: 7px;
-    font-size: 16px;
+.profile .profile-container .profile-body form .form-control select:disabled{
+    background-color: #ffffff77;
     color: #350D73;
-    font-weight: 600;
+ }
+ .profile .profile-container .profile-body form .profile-footer{
+display: flex;
+justify-content: end;
+width: 100%;
+ }
+ .profile .profile-container .profile-body form .profile-footer button{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    appearance: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    background: var(--red-gradient, linear-gradient(96deg, rgb(226, 9, 208) 10.59%, #d40404 70.48%));
+    color: #fff;
 }
+
+
+
 .pro-pass-tittle{
     width: 100%;
     padding-left: 10px;
@@ -1982,10 +2059,22 @@ td {
 .merchant .dashbord-vendor{
     background: var(--red-gradient, linear-gradient(96deg, rgba(86, 0, 112, 0.774) 10.59%, #010374d7 70.48%));
     border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.merchant .dashbord-vendor .rem button{
+    background: var(--red-gradient, linear-gradient(96deg, rgba(3, 224, 140, 0.774) 10.59%, #f000b4d7 70.48%));
+    border-radius: 7px;
+    color: #fff;
+    padding: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 .merchant .dashbord-vendor .content-mv{
     padding: 10px;
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-right: 15px;
     color: #fff;
 }
@@ -2004,6 +2093,116 @@ td {
    font-size: 17px;
    font-weight: 600;
 }
+.remit-fund{
+    padding: 10px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.274);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.remit-fund .fund-container{
+    background-color: #FFF;
+    border-radius   : 5px;
+    box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    height: auto;
+}
+.remit-fund .fund-container .fund-body{
+    padding: 10px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.remit-fund .fund-container .fund-body .fund-account{
+    display: flex;
+    flex-direction: column;
+    color: #6600b9;
+}
+.remit-fund .fund-container .fund-body .fund-head{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #300088;
+}
+.remit-fund .fund-container .fund-body .fund-account{
+   background-color: #360d7310;
+   padding: 5px;
+}
+.remit-fund .fund-container .fund-body .fund-account p , a {
+    margin            : 0;
+    padding           : 0;
+    font-size         : 13px;
+    text-decoration   : none !important;
+    -webkit-appearance: none;
+    appearance        : none;
+    color: #3f009e;
+}
+.remit-fund .fund-container .fund-body .note{
+    font-size: 12.5px;
+    width: auto;
+    padding: 0;
+    color: #300088;
+}
+.remit-fund .fund-container .fund-body form .form-control{
+display: flex;
+justify-content: center;
+align-items: center;
+background: var(--red-gradient, linear-gradient(96deg, rgba(21, 0, 112, 0.774) 10.59%, #740127d7 70.48%));
+border-radius: 7px;
+padding: 5px;
+color: #fff;
+}
+.remit-fund .fund-container .fund-body form .form-control input{
+   display: none;
+}
+.remit-fund .fund-container .fund-body form .form-control label span{
+    color: #fff;
+    font-size: 15px;
+    padding-right: 5px;
+ }
+.remit-fund .fund-container .fund-body form  #show-img{
+   font-size: 12px;
+   color: #300088;
+   margin-top: 7px;
+ }
+.remit-fund .fund-container .fund-body form .fund-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.remit-fund .fund-container .fund-body form .fund-btn button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    padding: 9px;
+    border-radius: 7px;
+    background: var(--red-gradient, linear-gradient(96deg, rgba(0, 130, 190, 0.774) 10.59%, #530174d7 70.48%));
+    color: #FFF;
+}
+.remit-fund .fund-container .fund-body form span{
+    font-size: 12px;
+    color: #300088;
+}
+.remit-fund .fund-container .fund-body form .fund-btn button:hover{
+    background: var(--red-gradient, linear-gradient(96deg, rgba(212, 72, 8, 0.774) 10.59%, #028f88d7 70.48%));
+}
+.remit-fund .fund-container .fund-body .vd-bt{
+    display: flex;
+    justify-content: flex-end;
+}
+.remit-fund .fund-container .fund-body .vd-bt span{
+   font-size: 2rem;
+   color: #e60c04;
+   cursor: pointer;
+}
+
+
+
+
 
 .merchant-list{
     padding: 10px;
@@ -2015,7 +2214,23 @@ td {
     box-shadow      : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
     width: 100%;
 }
-.merchant-list .merchant-container .code-head{
+.merchant-list .merchant-container .merchant-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+.merchant-list .merchant-container .merchant-head select{
+    appearance: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #300088;
+}
+.merchant-list .merchant-container .merchant-head .code-head{
     font-size: 16px;
     padding: 10px;
     padding-bottom: 0px;
