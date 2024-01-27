@@ -89,3 +89,24 @@ function toggleTab(tab) {
   correspondingBody.classList.add('active');
 }
 
+function toggleTab(tab) {
+  // Check if the clicked tab is already active
+  if (!tab.classList.contains('active')) {
+    // Get the tab and body elements
+    const jobtabs = document.querySelectorAll('.my-jobs');
+    const jobBodies = document.querySelectorAll('.order-body');
+
+    // Remove the 'active' class from all tab buttons and bodies
+    jobtabs.forEach(btn => btn.classList.remove('active'));
+    jobBodies.forEach(body => body.classList.remove('active'));
+
+    // Add the 'active' class to the clicked tab button and corresponding body
+    tab.classList.add('active');
+    const tabId = tab.getAttribute('data-tab');
+    const correspondingBody = document.getElementById(tabId);
+
+    if (correspondingBody) {
+      correspondingBody.classList.add('active');
+    }
+  }
+}
