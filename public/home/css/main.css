@@ -202,7 +202,7 @@ section.hero .container-fluid .row .col .hero-img {
 
 section.hero .container-fluid .row .col .hero-img img {
     object-fit: cover;
-    width     : 500px;
+    width     : 400px;
     height    : 70%;
 }
 
@@ -262,10 +262,10 @@ section.hero-part2 .container-fluid .sub-hero .row {
 
 section.hero-part2 .container-fluid .sub-hero .row .sub-hero-content {
     color        : var(--Text-color);
-    width        : 32.3%;
+    width        : 30%;
     border-radius: 7px;
     box-shadow   : 1px 1px 4px 0px rgba(179, 0, 179, 0.342), 1px 1px 4px 0px rgba(204, 0, 204, 0.26) inset;
-    padding      : 2rem;
+    padding      : 1.5rem;
 }
 
 section.hero-part2 .container-fluid .sub-hero .sub-hero-content .title-icon {
@@ -535,7 +535,7 @@ section.shop .shop-note h2 {
 }
 
 section.shop .shop-note p {
-    font-size  : 18px;
+    font-size  : 16px;
     font-weight: 600;
     width      : 60%;
     color      : #cccccce3;
@@ -559,9 +559,10 @@ section.shop .searchbar form input {
     background-color  : var(--secondary-color);
     outline           : none;
     width             : 100%;
-    padding           : 15px;
+    padding           : 10px;
     border-radius     : 7px;
     box-shadow        : 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+    position: relative;
 }
 
 section.shop .searchbar form input:focus {
@@ -574,12 +575,10 @@ section.shop .searchbar form button {
     font-size       : 15px;
     position        : absolute;
     padding         : 10px;
-    padding-left    : 20px;
-    padding-right   : 20px;
+    width: 10%;
     border-radius   : 7px;
     background-color: var(--carbor-color);
-    left            : 1350px;
-    top             : 5.7px;
+    top             : 1px;
     right: 0;
     border          : none;
     display         : flex;
@@ -604,7 +603,7 @@ section.shop .container-fluid .row {
 }
 
 section.shop .container-fluid .row .card {
-    width           : 22.7rem;
+    width           : 17.5rem;
     padding         : 0;
     border          : none;
     border-radius   : 7px;
@@ -614,7 +613,7 @@ section.shop .container-fluid .row .card {
 }
 
 section.shop .container-fluid .row .card .card-body h5.card-title {
-    font-size  : 18px;
+    font-size  : 15px;
     font-weight: 800;
     width      : 100%;
 }
@@ -623,7 +622,7 @@ section.shop .container-fluid .row .card .card-body .product-details a {
     display        : flex;
     gap            : 3px;
     text-decoration: none;
-    font-size      : 14px;
+    font-size      : 13px;
     color          : var(--btn-color);
     margin-top     : 10px;
 }
@@ -646,7 +645,7 @@ section.shop .container-fluid .row .card .card-body .product-info .product-amoun
 }
 
 section.shop .container-fluid .row .card .card-body .product-info .product-amount .amount {
-    font-size  : 17px;
+    font-size  : 14px;
     font-weight: 700;
     color      : var(--zip-color);
 }
@@ -693,7 +692,7 @@ section.shop .container-fluid .row .card .card-body .product-info .product-resel
 }
 
 section.shop .container-fluid .row .card .card-body .product-info .product-resell .info span {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 section.shop .container-fluid .row .card .card-footer {
@@ -763,7 +762,7 @@ section.shop .container-fluid .row .card .card-footer span {
     text-decoration: underline;
 }
 .modal .modal-dialog .modal-content .resell-tips h4{
-    font-size : 18px;
+    font-size : 15px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: -20px;
@@ -774,7 +773,7 @@ section.shop .container-fluid .row .card .card-footer span {
     padding-top: 25px;
 }
 .modal .modal-dialog .modal-content .modal-body .product-discrib p.info{
-    font-size : 19px;
+    font-size : 14px;
     text-align: center;
 }
 .modal .modal-dialog .modal-content .modal-body .product-footer.plh{
@@ -791,7 +790,7 @@ section.shop .container-fluid .row .card .card-footer span {
 .modal .modal-dialog .modal-content .modal-body .resell-gen button{
     text-align: center;
     padding: 10px;
-    font-size: 17px;
+    font-size: 14px;
     border-radius: 7px;
     border: none;
     outline: none;
@@ -818,14 +817,16 @@ section.shop .container-fluid .row .card .card-footer span {
     border: none;
     outline: none;
     background-color: #b300b311;
-    color: #fff;
-    padding: 10px;
-    
+    color: #ffffffe1;
+    padding: 6px;
+    padding-left: 1.1rem;
+    font-size: 13px;  
 }
+
 .modal .modal-dialog .modal-content .modal-body form .form-control span{
     background: var(--red-gradient, linear-gradient(96deg, rgb(233, 15, 106) 10.59%, #a902b8 70.48%));
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     width: 15%;
     padding: 7px;
@@ -835,7 +836,7 @@ section.shop .container-fluid .row .card .card-footer span {
 .modal .modal-dialog .modal-content .modal-body .resell-gen button:hover{
     text-align: center;
     padding: 10px;
-    font-size: 17px;
+    font-size: 14px;
     border-radius: 7px;
     border: none;
     outline: none;
@@ -845,7 +846,7 @@ section.shop .container-fluid .row .card .card-footer span {
 .modal .modal-dialog .modal-content .modal-footer.mf h4{
     background-color: #f804046c;
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
     padding: 7px;
 }
 
@@ -1179,6 +1180,7 @@ section.top-earner .container-fluid {
 
 section.top-earner .container-fluid .row {
     display: flex;
+    flex-wrap: wrap;
     gap    : 15px;
 }
 
@@ -1193,7 +1195,7 @@ section.top-earner .container-fluid .row .col {
     padding         : 10px;
     gap             : 5px;
     overflow        : hidden;
-    width           : 24.1% !important;
+    width           : 18% !important;
 }
 
 section.top-earner .container-fluid .row .col span {
@@ -1246,7 +1248,7 @@ section.top-earner .container-fluid .row .col .top-content .name {
 }
 
 section.top-earner .container-fluid .row .col .top-content .amount {
-    font-size  : 14.2px;
+    font-size  : 12px;
     font-weight: 700;
 }
 
@@ -1255,8 +1257,8 @@ section.top-earner .container-fluid .row .col .chat {
 }
 
 section.top-earner .container-fluid .row .col .chat a img {
-    width : 45px;
-    height: 45px;
+    width : 25px;
+    height: 25px;
 }
 
 section.top-earner .container-fluid .row .col .chat a img:hover {
@@ -1430,7 +1432,7 @@ section.job .container-fluid .row .col {
 }
 
 section.job .container-fluid .row .col h1 {
-    font-size  : 5rem;
+    font-size  : 4rem;
     font-weight: 800;
 
 }
@@ -1528,7 +1530,7 @@ section.job .container-fluid .row .col .job-tag ul li a:hover {
 }
 section.job .container-fluid .row .col .image img {
     object-fit       : cover;
-    width            : 500px;
+    width            : 400px;
     height           : 70%;
     animation        : floatAnimation 2s ease-in-out infinite;
     -webkit-animation: floatAnimation 2s ease-in-out infinite;
@@ -1570,7 +1572,7 @@ section.job-filter .container-fluid .row {
 }
 
 section.job-filter .container-fluid .row .card {
-    width           : 22.6rem;
+    width           : 17rem;
     padding         : 0;
     border          : none;
     border-radius   : 7px;
@@ -1593,7 +1595,7 @@ section.job-filter .container-fluid .row .card .card-footer span {
 }
 
 section.job-filter .container-fluid .row .card .card-body h5.card-title {
-    font-size: 19px;
+    font-size: 16px;
 }
 
 section.job-filter .container-fluid .card .card-body h5.card-title a {
@@ -1860,4 +1862,79 @@ section.virtual-job .container-fluid .vt-content .vt-btn a:hover {
     text-decoration : none;
     background-color: transparent;
     border          : 2px solid var(--carbor-color);
+}
+
+
+section.tommy{
+    background-color: #a902b8;
+    padding: 3rem;
+}
+section.tommy .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+.content{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.content-body{
+    gap: 10px;
+}
+.content-footer{
+    padding-top: 1.4rem;
+}
+.info ul{
+    gap: 30px;
+    margin-bottom: 0;
+ 
+}
+.info ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+ }
+.info ul li span{
+   font-size: 25px;
+}
+.content-body ul{
+list-style: none;
+padding-left: 0;
+padding: 10px;
+margin-bottom: 0rem;
+margin-top: 1.5rem;
+}
+.content-body ul li{
+  font-size: 14.5px;
+  font-weight: 500;
+    }
+.content-body .net{
+    background-color: #fff;
+    border: 4px var(--net-color) solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.net-dy{
+    position: relative;
+}
+.content-body .net-dy .net img{
+    position: absolute;
+    top: 0;
+    width: 35%;
+}
+.dg-list-p{
+    justify-content: center;
+    align-items: center;
+}
+.dg-list-p ul{
+   list-style: none;
+   gap: 7px;
+   padding-left: 2px;
 }

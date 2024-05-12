@@ -248,7 +248,7 @@ section.blog .container-fluid .row {
     gap: 25px;
 }
 section.blog .container-fluid .row .card{
-    width:22.7rem;
+    width:17rem;
     padding: 0;
     border: none;
     height: auto;
@@ -274,7 +274,7 @@ section.blog .container-fluid .row .card .card-footer .name span{
     padding-left: 5px;
 }
 section.blog .container-fluid .row .card .card-body h5.card-title{
-    font-size: 18px;
+    font-size: 16px;
     
 }
 section.blog .container-fluid .row .card .card-body h5.card-title a{
@@ -287,7 +287,7 @@ section.blog .container-fluid .row .card .card-body h5.card-title a:hover{
 }
 section.blog .container-fluid .row .card .card-body p{
     padding-top: 20px;
-    font-size: 15px;
+    font-size: 13px;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
